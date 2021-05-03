@@ -74,6 +74,7 @@ header ul a {
 }
 
 .hero {
+  height: 100vh;
   background: #141824;
   color: #ffb600;
   display: -ms-grid;
