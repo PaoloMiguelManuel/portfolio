@@ -13,9 +13,10 @@ $accentColour: #0049ff;
 }
 
 body {
+  height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  // font-size: 1.2em;
 }
 
 ul {
@@ -114,7 +115,7 @@ header {
 }
 
 section {
-  padding: 2em 2em;
+  padding: 2em 2em 3em 2em;
   text-align: center;
 }
 
@@ -209,7 +210,7 @@ section {
 
 .portfolio-container a img {
   border-radius: 1em;
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 
 .featured-heading-container {
