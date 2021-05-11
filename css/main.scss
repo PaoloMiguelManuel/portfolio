@@ -42,6 +42,14 @@ img {
     }
   }
 
+  a.pmm-logo {
+    // color: red;
+    font-size: 1.5rem;
+    font-family: "Vampiro One", cursive;
+    margin-right: 0.8em;
+    color: $highlightColour;
+  }
+
   i {
     font-size: 1.5em;
     // color: #000000;
@@ -146,11 +154,12 @@ section {
 
 .skills {
   background-color: $mainColour;
+  // height: 100vh;
 }
 
 .skills-container ul li {
   background-color: #ffffff;
-  padding: 1em;
+  padding: 2em;
   border-radius: 0.5em;
   margin-bottom: 1em;
 
@@ -180,6 +189,10 @@ section {
   .featured-desc {
     margin-bottom: 2em;
   }
+}
+
+.inner {
+  margin-bottom: 1.5em;
 }
 
 .portfolio-container a img {
@@ -502,14 +515,47 @@ section {
   }
 }
 
-.github-btn {
-  color: red;
+.code-site-containers {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-align: center;
+
+  .github-btn {
+    color: #000000;
+    // width: 200px;
+    width: 100%;
+    border-radius: 0.4em;
+    background-color: #db6b02;
+    margin-right: 1em;
+    &:hover {
+      background-color: #d68940;
+      color: #ffffff;
+    }
+  }
+  .live-btn {
+    color: #000000;
+    // width:
+    width: 100%;
+    border-radius: 0.4em;
+    background-color: #1d8f50;
+    // background-color: #6c3da8;
+    &:hover {
+      // background-color: #8860bd;
+      background-color: #37a066;
+      color: #ffffff;
+    }
+  }
 }
 
-.paolo-logo {
-  // height: 5em;
-  width: 50%;
-}
+// .pmm-logo {
+//   // height: 5em;
+//   // width: 50%;
+//   font-family: 'Vampiro One', cursive;
+//   a {
+//     font-size: 5rem !important;
+//   }
+// }
 
 .tester2 {
   // height: 100%;
