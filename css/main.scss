@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 
-img {
+img.site-screenshot {
   width: 100%;
   // padding-bottom: 2em;
   // margin-bottom: 9em;
@@ -38,7 +38,7 @@ img {
 .nav-container {
   a {
     color: white;
-    font-size: 0.8em;
+    font-size: 0.9rem;
     // text-transform: uppercase;
 
     &:hover {
@@ -95,7 +95,7 @@ header {
 }
 
 .hero {
-  height: 70vh;
+  height: 90vh;
   background: $mainColour;
   color: $highlightColour;
   display: grid;
@@ -285,7 +285,34 @@ section {
   }
 }
 
+.name-pic {
+  // width: 100px;
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  // background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  img {
+    // padding-left: 1em;
+    height: 200px;
+    // padding: 1em;
+    // background-color: red;
+  }
+}
+
 @media only screen and (min-width: 800px) {
+  .name-pic {
+
+    img {
+      padding-left: 8em;
+      padding-right: 8em;
+    }
+  }
+
   .featured,
   .portfolio {
     text-align: left;
@@ -336,6 +363,24 @@ section {
   .hero {
     height: 95vh;
     // display: grid;
+  }
+
+  .name-pic {
+    display: flex;
+    // background: red;
+    // position: relative;
+    justify-content: flex-start;
+    h1 {
+      margin-right: 1em;
+    }
+    img {
+      // background: pink;
+      // position: absolute;
+      // padding: 0;
+      // top: 0;
+      // left: 375px;
+      padding-left: 0;
+    }
   }
 
   .nav-container {
@@ -413,6 +458,23 @@ section {
       // }
     }
   }
+
+  // .avatar-pic {
+  //   position: relative;
+
+  //   img {
+  //     position: absolute;
+  //     // top: -50px;
+  //     // left: 300px;
+  //     left: 450px;
+  //     // left: 100px;
+  //     bottom: 10px;
+  //     width: 200px;
+  //     // max-width: 50%;
+  //   }
+  // }
+
+
 
   .meet {
     //   margin: unset;

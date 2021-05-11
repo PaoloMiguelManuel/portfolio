@@ -24,13 +24,13 @@ a {
   text-decoration: none;
 }
 
-img {
+img.site-screenshot {
   width: 100%;
 }
 
 .nav-container a {
   color: white;
-  font-size: 0.8em;
+  font-size: 0.9rem;
 }
 
 .nav-container a:hover {
@@ -76,7 +76,7 @@ header ul a {
 }
 
 .hero {
-  height: 70vh;
+  height: 90vh;
   background: #141824;
   color: #ffb600;
   display: -ms-grid;
@@ -276,7 +276,34 @@ section {
   color: #0049ff;
 }
 
+.name-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.name-pic h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.name-pic img {
+  height: 200px;
+}
+
 @media only screen and (min-width: 800px) {
+  .name-pic img {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
   .featured,
   .portfolio {
     text-align: left;
@@ -316,6 +343,20 @@ section {
 @media only screen and (min-width: 1050px) {
   .hero {
     height: 95vh;
+  }
+  .name-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .name-pic h1 {
+    margin-right: 1em;
+  }
+  .name-pic img {
+    padding-left: 0;
   }
   .nav-container {
     display: -ms-grid;
