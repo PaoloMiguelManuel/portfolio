@@ -120,7 +120,7 @@ header {
 }
 
 section {
-  padding: 5em 2em 3em 2em;
+  padding: 3em 2em 3em 2em;
   text-align: center;
 }
 
@@ -225,6 +225,7 @@ section {
   padding-top: 3em;
   .featured-heading {
     font-style: italic;
+    // border-bottom: 1px solid $highlightColour;
     color: $mainColour;
     font-weight: 900;
     font-size: 2em;
@@ -239,7 +240,7 @@ section {
   justify-content: center;
   // background-color: $mainColour;
   // padding-top: 3em;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   .skills-heading {
     font-style: italic;
 
