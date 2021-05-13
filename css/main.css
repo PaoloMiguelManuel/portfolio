@@ -527,12 +527,12 @@ section {
   color: #000000;
   width: 100%;
   border-radius: 0.4em;
-  background-color: #db6b02;
+  background-color: #0049ff;
   margin-right: 1em;
 }
 
 .code-site-containers .github-btn:hover {
-  background-color: #d68940;
+  background-color: #2760f0;
   color: #ffffff;
 }
 
@@ -540,11 +540,11 @@ section {
   color: #000000;
   width: 100%;
   border-radius: 0.4em;
-  background-color: #1d8f50;
+  background-color: #ffb600;
 }
 
 .code-site-containers .live-btn:hover {
-  background-color: #37a066;
+  background-color: #ffc123;
   color: #ffffff;
 }
 
