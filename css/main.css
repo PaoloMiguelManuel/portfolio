@@ -218,7 +218,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
 }
 
 .skills-heading-container .skills-heading {
