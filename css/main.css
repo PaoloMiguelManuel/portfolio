@@ -8,6 +8,14 @@
           clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
+nav {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -41,7 +49,7 @@ img.site-screenshot {
   font-size: 1.5rem;
   font-family: "Vampiro One", cursive;
   margin-right: 0.5em;
-  color: #ffb600;
+  color: red;
 }
 
 .nav-container i {
@@ -76,7 +84,6 @@ header ul a {
 }
 
 .hero {
-  height: 90vh;
   background: #141824;
   color: #ffb600;
   display: -ms-grid;
@@ -118,6 +125,7 @@ section {
 }
 
 .featured-title {
+  letter-spacing: 0.2rem;
   color: #0049ff;
   font-weight: bold;
   font-size: 1.3em;
@@ -194,6 +202,7 @@ section {
 }
 
 .featured-heading-container .featured-heading {
+  font-style: italic;
   color: #141824;
   font-weight: 900;
   font-size: 2em;
@@ -213,6 +222,7 @@ section {
 }
 
 .skills-heading-container .skills-heading {
+  font-style: italic;
   color: #ffb600;
   font-weight: 900;
   font-size: 2em;
@@ -232,6 +242,7 @@ section {
 }
 
 .portfolio-heading-container .portfolio-heading {
+  font-style: italic;
   color: #141824;
   font-weight: 900;
   font-size: 2em;
