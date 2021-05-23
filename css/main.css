@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .background {
   background-color: #e5e8e8;
   width: 100%;
@@ -116,7 +123,7 @@ section {
   border-radius: 1em;
 }
 
-.subtitle {
+.tech-stack {
   color: #ffb600;
   text-transform: uppercase;
   font-weight: bold;
@@ -124,7 +131,7 @@ section {
   font-size: 0.85em;
 }
 
-.featured-title {
+.project-title {
   letter-spacing: 0.2rem;
   color: #0049ff;
   font-weight: bold;
@@ -134,7 +141,7 @@ section {
   text-transform: uppercase;
 }
 
-.featured-desc {
+.description {
   color: #000;
   font-size: 0.8em;
   line-height: 1.8em;
@@ -178,7 +185,7 @@ section {
   font-size: 0.9em;
 }
 
-.skills-container ul li .featured-desc {
+.skills-container ul li .description {
   margin-bottom: 2em;
 }
 
@@ -202,7 +209,6 @@ section {
 }
 
 .featured-heading-container .featured-heading {
-  font-style: italic;
   color: #141824;
   font-weight: 900;
   font-size: 2em;
@@ -222,7 +228,6 @@ section {
 }
 
 .skills-heading-container .skills-heading {
-  font-style: italic;
   color: #ffb600;
   font-weight: 900;
   font-size: 2em;
@@ -242,7 +247,6 @@ section {
 }
 
 .portfolio-heading-container .portfolio-heading {
-  font-style: italic;
   color: #141824;
   font-weight: 900;
   font-size: 2em;
@@ -546,9 +550,5 @@ section {
 .code-site-containers .live-btn:hover {
   background-color: #ffc123;
   color: #ffffff;
-}
-
-.tester2 {
-  margin-top: 0;
 }
 /*# sourceMappingURL=main.css.map */

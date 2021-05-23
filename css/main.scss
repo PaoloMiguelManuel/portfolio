@@ -3,6 +3,12 @@ $mainColour: #141824;
 $highlightColour: #ffb600;
 $accentColour: #0049ff;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .background {
   background-color: #e5e8e8;
   width: 100%;
@@ -21,7 +27,6 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  // font-size: 1.2em;
 }
 
 ul {
@@ -134,19 +139,7 @@ section {
   }
 }
 
-// .featured::before {
-//   content: "";
-//   position: absolute;
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-//   background: red;
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-// }
-
-.subtitle {
+.tech-stack {
   color: $highlightColour;
   text-transform: uppercase;
   font-weight: bold;
@@ -154,7 +147,7 @@ section {
   font-size: 0.85em;
 }
 
-.featured-title {
+.project-title {
   letter-spacing: 0.2rem;
   color: $accentColour;
   font-weight: bold;
@@ -164,7 +157,7 @@ section {
   text-transform: uppercase;
 }
 
-.featured-desc {
+.description {
   color: #000;
   font-size: 0.8em;
   line-height: 1.8em;
@@ -205,7 +198,7 @@ section {
     font-size: 0.9em;
   }
 
-  .featured-desc {
+  .description {
     margin-bottom: 2em;
   }
 }
@@ -224,7 +217,7 @@ section {
   justify-content: center;
   padding-top: 3em;
   .featured-heading {
-    font-style: italic;
+    // font-style: italic;
     // border-bottom: 1px solid $highlightColour;
     color: $mainColour;
     font-weight: 900;
@@ -242,7 +235,7 @@ section {
   // padding-top: 3em;
   padding-bottom: 3em;
   .skills-heading {
-    font-style: italic;
+    // font-style: italic;
 
     color: $highlightColour;
     font-weight: 900;
@@ -259,7 +252,7 @@ section {
   justify-content: center;
   padding-top: 3em;
   .portfolio-heading {
-    font-style: italic;
+    // font-style: italic;
 
     color: $mainColour;
     font-weight: 900;
@@ -318,7 +311,6 @@ section {
 
 @media only screen and (min-width: 800px) {
   .name-pic {
-
     img {
       padding-left: 8em;
       padding-right: 8em;
@@ -486,8 +478,6 @@ section {
   //   }
   // }
 
-
-
   .meet {
     //   margin: unset;
     color: royalblue;
@@ -544,24 +534,6 @@ section {
     padding: 9em 20em 6em 20em;
   }
 }
-
-// .contact-btn {
-//   background: $accentColour;
-//   border-radius: 11px;
-//   padding: 12px 30px;
-//   color: #ffffff;
-//   // color: $highlightColour;
-//   // display: inline-block;
-//   // font: normal bold 26px/1 "Open Sans", sans-serif;
-//   // text-align: center;
-// }
-
-// .contact-btn:hover {
-//   background: $highlightColour;
-//   color: black;
-// }
-
-// $color: $accentColour;
 
 .contact-btn {
   display: inline-block;
@@ -638,18 +610,4 @@ section {
       color: #ffffff;
     }
   }
-}
-
-// .pmm-logo {
-//   // height: 5em;
-//   // width: 50%;
-//   font-family: 'Vampiro One', cursive;
-//   a {
-//     font-size: 5rem !important;
-//   }
-// }
-
-.tester2 {
-  // height: 100%;
-  margin-top: 0;
 }
