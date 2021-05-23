@@ -48,7 +48,7 @@ a {
   color: #ffb600;
 }
 
-.nav-container a.pmm-logo {
+.nav-container .initials {
   font-size: 1.5rem;
   font-family: "Vampiro One", cursive;
   margin-right: 0.5em;
@@ -96,12 +96,18 @@ header ul a {
 }
 
 .hero h1 {
-  color: #ffb600;
+  color: #ffffff;
   text-transform: uppercase;
+  font-family: "Permanent Marker", cursive;
+}
+
+.hero h1 span {
+  color: #ffb600;
 }
 
 .hero h2 {
   color: #ffffff;
+  font-family: "Permanent Marker", cursive;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
@@ -189,13 +195,24 @@ section {
 }
 
 .portfolio-heading-container .portfolio-heading {
-  color: #141824;
-  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+  font-family: "Permanent Marker", cursive;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2.5em;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   margin: 0;
+}
+
+.portfolio-heading-container .portfolio-heading mark {
+  background-color: #ffb600;
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.35em;
+}
+
+.portfolio-container {
+  margin-bottom: 3em;
 }
 
 .inner {
@@ -207,9 +224,11 @@ section {
   color: #0049ff;
   font-weight: bold;
   font-size: 1.3em;
-  margin-top: -0.4em;
+  margin-bottom: 0.5em;
   display: block;
   text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .tech-stack {
@@ -218,12 +237,16 @@ section {
   font-weight: bold;
   letter-spacing: 0.2em;
   font-size: 0.85em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 .description {
   color: #000;
   font-size: 0.8em;
   line-height: 1.8em;
+  margin-bottom: 1em;
 }
 
 .code-site-containers {
@@ -238,6 +261,8 @@ section {
 }
 
 .code-site-containers .github-btn {
+  -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
   color: #000000;
   width: 100%;
   border-radius: 0.4em;
@@ -251,6 +276,8 @@ section {
 }
 
 .code-site-containers .live-btn {
+  -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
   color: #000000;
   width: 100%;
   border-radius: 0.4em;
@@ -264,7 +291,8 @@ section {
 
 .portfolio-container a img {
   border-radius: 1em;
-  margin-bottom: 4em;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
 }
 
 .site-screenshot {
@@ -282,13 +310,21 @@ section {
 }
 
 .skills-heading-container .skills-heading {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   color: #ffb600;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2.5em;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   margin: 0;
+}
+
+.skills-heading-container .skills-heading mark {
+  color: #fff;
+  background-color: #0049ff;
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.35em;
 }
 
 .skills {
@@ -333,7 +369,7 @@ section {
   margin-bottom: 2em;
 }
 
-.featured-heading-container {
+.about-heading-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,21 +379,29 @@ section {
   padding-top: 3em;
 }
 
-.featured-heading-container .featured-heading {
+.about-heading-container .about-heading {
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
   color: #141824;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2.5em;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   margin: 0;
 }
 
-.featured {
+.about-heading-container .about-heading mark {
+  background-color: #ffb600;
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.35em;
+}
+
+.about {
   position: relative;
 }
 
-.featured img {
+.about img {
   border-radius: 1em;
 }
 
@@ -402,11 +446,11 @@ section {
     padding-left: 8em;
     padding-right: 8em;
   }
-  .featured,
+  .about,
   .portfolio {
     text-align: left;
   }
-  .featured,
+  .about,
   .portfolio-container {
     display: -ms-grid;
     display: grid;
