@@ -1,6 +1,12 @@
-$mainColour: #141824;
-$highlightColour: #ffb600;
-$accentColour: #0049ff;
+$backgroundColour: #272727;
+$primaryColour: #ffe400;
+// $secondaryColour: #ff652f;
+$secondaryColour: #2e9cca;
+
+$tertiaryColour: #14a76c;
+
+$githubBtnColour: #2f4454;
+$liveBtnColour: #376e6f;
 
 * {
   margin: 0;
@@ -12,10 +18,13 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  // background-color: red;
 }
 
 .background {
   background-color: #e5e8e8;
+  // background: rgb(255,182,0);
+  // background: linear-gradient(90deg, rgba(255,182,0,1) 0%, rgba(0,73,255,1) 100%);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -42,10 +51,11 @@ a {
   a {
     color: white;
     font-size: 0.9rem;
+    letter-spacing: 1.3px;
     // text-transform: uppercase;
 
     &:hover {
-      color: $highlightColour;
+      color: $primaryColour;
     }
   }
 
@@ -54,7 +64,7 @@ a {
     font-size: 1.5rem;
     font-family: "Vampiro One", cursive;
     margin-right: 0.5em;
-    color: $highlightColour;
+    color: $primaryColour;
   }
 
   i {
@@ -64,7 +74,7 @@ a {
 
   // .nav-cust-border:hover {
   //   // color: red;
-  //   color: $highlightColour;
+  //   color: $primaryColour;
   //   // border-bottom: 2px solid #fff;
   //   // border-bottom-width: 20px;
   // }
@@ -74,7 +84,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 2em;
-  background-color: $mainColour;
+  background-color: $backgroundColour;
 
   // .logo {
   //   color: #ffffff;
@@ -99,8 +109,8 @@ header {
 
 .hero {
   // height: 100%;
-  background: $mainColour;
-  color: $highlightColour;
+  background: $backgroundColour;
+  color: $primaryColour;
   display: grid;
   text-align: center;
   padding: 2em 4em 4em 4em;
@@ -109,18 +119,22 @@ header {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Permanent Marker", cursive;
-
+    // letter-spacing: 20px;
     span {
-      color: $highlightColour;
+      color: $primaryColour;
     }
   }
 
   h2 {
     color: #ffffff;
     font-family: "Permanent Marker", cursive;
-
+    padding: 1em 0;
     text-transform: uppercase;
+    letter-spacing: 3px;
     font-size: 1.5rem;
+    span {
+      color: $primaryColour;
+    }
   }
 }
 
@@ -129,6 +143,7 @@ header {
   h1 {
     font-size: 3rem;
     margin-bottom: 0;
+    letter-spacing: 5px;
   }
   // background-color: red;
   display: flex;
@@ -162,7 +177,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $accentColour;
+    background-color: $secondaryColour;
     border-radius: 11px;
     z-index: -2;
   }
@@ -174,13 +189,13 @@ header {
     width: 0%;
     height: 100%;
     // background-color: darken($color, 15%);
-    background-color: $highlightColour;
+    background-color: $primaryColour;
     transition: all 0.3s;
     border-radius: 11px;
     z-index: -1;
   }
   &:hover {
-    color: $mainColour;
+    color: $backgroundColour;
     &:before {
       width: 100%;
     }
@@ -199,9 +214,9 @@ section {
   padding-top: 3em;
   .portfolio-heading {
     // font-style: italic;
-  text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
+    // text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
 
-    // color: $accentColour;
+    // color: $secondaryColour;
     font-family: "Permanent Marker", cursive;
     // color: red;
     font-weight: 900;
@@ -209,10 +224,9 @@ section {
     letter-spacing: 0.17em;
     text-transform: uppercase;
     margin: 0;
-    
 
     mark {
-      background-color: $highlightColour;
+      background-color: $secondaryColour;
       display: inline-block;
       line-height: 0em;
       padding-bottom: 0.35em;
@@ -223,7 +237,6 @@ section {
 .portfolio-container {
   // background-color: red;
   margin-bottom: 3em;
-  // box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .inner {
@@ -232,7 +245,7 @@ section {
 
 .project-title {
   letter-spacing: 0.2rem;
-  color: $accentColour;
+  color: $backgroundColour;
   font-weight: bold;
   font-size: 1.3em;
   // margin-top: -0.4em;
@@ -240,28 +253,24 @@ section {
   display: block;
   text-transform: uppercase;
   text-align: center;
-  // text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-  // text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
-  text-shadow: 2px 3px 15px rgba(0,0,0,0.5);
 
-
+  // text-shadow: 2px 3px 15px rgba(0,0,0,0.5);
 }
 
 .tech-stack {
-  color: $highlightColour;
+  color: $secondaryColour;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2em;
   font-size: 0.85em;
   margin-bottom: 0.5em;
   text-align: center;
-  text-shadow: 2px 3px 20px rgba(0,0,0,0.5);
-
+  // text-shadow: 2px 3px 20px rgba(0,0,0,0.5);
 }
 
 .description {
   color: #000;
-  font-size: 0.8em;
+  font-size: 0.9rem;
   line-height: 1.8em;
   margin-bottom: 1em;
 }
@@ -273,40 +282,47 @@ section {
   text-align: center;
 
   .github-btn {
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+    // box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
 
-
-    color: #000000;
+    border: 2px solid $githubBtnColour;
+    color: #ffffff;
+    background-color: $githubBtnColour;
     // width: 200px;
     width: 100%;
-    border-radius: 0.4em;
-    background-color: $accentColour;
+    border-radius: 5rem;
+    // background-color: $githubBtnColour;
     margin-right: 1em;
     &:hover {
-      background-color: rgb(39, 96, 240);
-      color: #ffffff;
+      // background-color: rgb(39, 96, 240);
+      color: $githubBtnColour;
+      background-color: #fff;
     }
   }
   .live-btn {
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+    // box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
 
-    color: #000000;
+    // color: #fff;
     // width:
     width: 100%;
-    border-radius: 0.4em;
-    background-color: $highlightColour;
+    border-radius: 5rem;
+    // background-color: $liveBtnColour;
+
     // background-color: #6c3da8;
+
+    border: 2px solid $liveBtnColour;
+    color: #ffffff;
+    background-color: $liveBtnColour;
     &:hover {
       // background-color: #8860bd;
-      background-color: #ffc123;
-      color: #ffffff;
+      color: $liveBtnColour;
+      background-color: #fff;
     }
   }
 }
 
 .portfolio-container a img {
   border-radius: 1em;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
+  // box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
 
   // margin-bottom: 4em;
 }
@@ -319,15 +335,14 @@ section {
 .skills-heading-container {
   display: flex;
   justify-content: center;
-  // background-color: $mainColour;
+  // background-color: $backgroundColour;
   // padding-top: 3em;
   padding-bottom: 3em;
   .skills-heading {
     // font-style: italic;
-    // text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
 
     font-family: "Permanent Marker", cursive;
-    color: $highlightColour;
+    color: $primaryColour;
     font-weight: 900;
 
     font-size: 2.5em;
@@ -337,7 +352,7 @@ section {
 
     mark {
       color: #fff;
-      background-color: $accentColour;
+      background-color: $tertiaryColour;
       display: inline-block;
       line-height: 0em;
       padding-bottom: 0.35em;
@@ -346,42 +361,71 @@ section {
 }
 
 .skills {
-  background-color: $mainColour;
+  background-color: $backgroundColour;
   // height: 100vh;
   padding-top: 3em;
 }
 
 .skills-container ul li {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+
   background-color: #ffffff;
   padding: 2em;
   border-radius: 0.5em;
   margin-bottom: 1em;
 
-  .icon-container {
-    display: grid;
-    place-content: center;
-    height: 50px;
-    font-size: 3.5em;
-    margin: 0 auto;
+  .primary-desc {
+    .icon-container {
+      display: grid;
+      place-content: center;
+      height: 50px;
+      font-size: 3.5em;
+      margin: 0 auto;
 
-    &.one {
-      color: $accentColour;
+      &.one {
+        // color: $primaryColour;
+      }
+      &.two {
+        // color: $secondaryColour;
+      }
+      &.three {
+        // color: $tertiaryColour;
+      }
     }
-    &.two {
-      color: $highlightColour;
+
+    .skill-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 0.8rem 0;
+      letter-spacing: 0.1rem;
     }
-    &.three {
-      color: $accentColour;
+
+    .description {
+      margin-bottom: 3.5rem;
     }
   }
 
-  .skill-title {
-    font-weight: bold;
-    font-size: 0.9em;
-  }
-
-  .description {
-    margin-bottom: 2em;
+  .secondary-desc {
+    h3 {
+      color: $tertiaryColour;
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.8rem;
+    }
+    ul {
+      list-style-type: disc;
+      text-align: left;
+      list-style-position: inside;
+      // line-height: 0.8rem;
+      li {
+        font-size: 0.9rem;
+        padding: 0 5% 15px 5%;
+        // padding-top: 0;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -392,10 +436,9 @@ section {
   padding-top: 3em;
   .about-heading {
     // font-style: italic;
-    // border-bottom: 1px solid $highlightColour;
-    text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
+    // border-bottom: 1px solid $primaryColour;
+    // text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
 
-    color: $mainColour;
     font-family: "Permanent Marker", cursive;
     font-weight: 900;
     font-size: 2.5em;
@@ -404,23 +447,87 @@ section {
     margin: 0;
 
     mark {
-      // color: #fff;
-      background-color: $highlightColour;
+      background-color: $primaryColour;
       display: inline-block;
       line-height: 0em;
       padding-bottom: 0.35em;
     }
   }
 }
-.about {
-  position: relative;
-  // margin-top: 1em;
-  // background-color: red;
 
-  img {
-    border-radius: 1em;
+.about {
+  // text-align: center;
+  display: flex;
+  // grid-template-columns: auto 40%;
+
+  flex-direction: column;
+
+  .about-left {
+    // background-color: red;
+    // margin-bottom: 1em;
+    // width: 25vh;
+    // background-color: red;
+    svg {
+      // height: 30vh;
+      width: 100%;
+      height: auto;
+    }
+    margin-bottom: 1em;
+  }
+
+  .about-right {
+    // background-color: purple;
+    // flex-grow: 3;
+  }
+
+
+  #minute {
+    animation: move-clock-hands 1s linear infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+  }
+
+  #hour {
+    animation: move-clock-hands 12s linear infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+  }
+
+  #body,
+  #head-neck {
+    animation: move-body 5s infinite;
+    transform-origin: 50% 100% 0;
+  }
+
+  @keyframes move-clock-hands {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  @keyframes move-body {
+    0%,
+    100% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
   }
 }
+
+// .about {
+//   position: relative;
+//   // margin-top: 1em;
+//   // background-color: red;
+
+//   img {
+//     border-radius: 1em;
+//   }
+// }
 
 // footer section
 .footer {
@@ -430,7 +537,7 @@ section {
     justify-content: space-around;
     align-content: center;
     flex-direction: column;
-    background-color: $mainColour;
+    background-color: $backgroundColour;
   }
   height: 10vh;
   text-align: center;
@@ -438,13 +545,13 @@ section {
   margin: 0;
 
   p {
-    color: $highlightColour;
+    color: $primaryColour;
     a {
       color: #ffffff;
       padding: 0 5px;
 
       &:hover {
-        color: $accentColour;
+        color: pink;
       }
     }
   }
@@ -459,12 +566,12 @@ section {
     }
   }
 
-  .about,
+  // .about,
   .portfolio {
     text-align: left;
   }
 
-  .about,
+  // .about,
   .portfolio-container {
     display: grid;
     grid-template-columns: 40% auto;
@@ -494,6 +601,24 @@ section {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
+
+    li {
+      .secondary-desc {
+        ul {
+          display: flex;
+          flex-direction: column;
+
+          li {
+            font-size: 0.9rem;
+            // color: red;
+            // padding: 0 !important;
+            padding: 0 5%;
+            // padding-top: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 
   .portfolio {
@@ -539,7 +664,7 @@ section {
     header {
       // background: red;
       // background: #272727;
-      background: $mainColour;
+      background: $backgroundColour;
     }
   }
 
@@ -578,7 +703,7 @@ section {
       }
 
       a:hover {
-        color: $accentColour;
+        color: purple;
       }
     }
   }
@@ -590,7 +715,7 @@ section {
     padding: 0;
 
     .content {
-      background: $mainColour;
+      background: $backgroundColour;
       padding: 6em 8em 6em 4em;
       text-align: left;
 

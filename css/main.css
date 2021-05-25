@@ -42,17 +42,18 @@ a {
 .nav-container a {
   color: white;
   font-size: 0.9rem;
+  letter-spacing: 1.3px;
 }
 
 .nav-container a:hover {
-  color: #ffb600;
+  color: #ffe400;
 }
 
 .nav-container .initials {
   font-size: 1.5rem;
   font-family: "Vampiro One", cursive;
   margin-right: 0.5em;
-  color: #ffb600;
+  color: #ffe400;
 }
 
 .nav-container i {
@@ -67,7 +68,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2em;
-  background-color: #141824;
+  background-color: #272727;
 }
 
 header ul {
@@ -87,8 +88,8 @@ header ul a {
 }
 
 .hero {
-  background: #141824;
-  color: #ffb600;
+  background: #272727;
+  color: #ffe400;
   display: -ms-grid;
   display: grid;
   text-align: center;
@@ -102,14 +103,20 @@ header ul a {
 }
 
 .hero h1 span {
-  color: #ffb600;
+  color: #ffe400;
 }
 
 .hero h2 {
   color: #ffffff;
   font-family: "Permanent Marker", cursive;
+  padding: 1em 0;
   text-transform: uppercase;
+  letter-spacing: 3px;
   font-size: 1.5rem;
+}
+
+.hero h2 span {
+  color: #ffe400;
 }
 
 .name-pic {
@@ -129,6 +136,7 @@ header ul a {
 .name-pic h1 {
   font-size: 3rem;
   margin-bottom: 0;
+  letter-spacing: 5px;
 }
 
 .name-pic img {
@@ -152,7 +160,7 @@ header ul a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0049ff;
+  background-color: #2e9cca;
   border-radius: 11px;
   z-index: -2;
 }
@@ -164,7 +172,7 @@ header ul a {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #ffb600;
+  background-color: #ffe400;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 11px;
@@ -172,7 +180,7 @@ header ul a {
 }
 
 .contact-btn:hover {
-  color: #141824;
+  color: #272727;
 }
 
 .contact-btn:hover:before {
@@ -195,7 +203,6 @@ section {
 }
 
 .portfolio-heading-container .portfolio-heading {
-  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
   font-family: "Permanent Marker", cursive;
   font-weight: 900;
   font-size: 2.5em;
@@ -205,7 +212,7 @@ section {
 }
 
 .portfolio-heading-container .portfolio-heading mark {
-  background-color: #ffb600;
+  background-color: #2e9cca;
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.35em;
@@ -221,30 +228,28 @@ section {
 
 .project-title {
   letter-spacing: 0.2rem;
-  color: #0049ff;
+  color: #272727;
   font-weight: bold;
   font-size: 1.3em;
   margin-bottom: 0.5em;
   display: block;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
 .tech-stack {
-  color: #ffb600;
+  color: #2e9cca;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2em;
   font-size: 0.85em;
   margin-bottom: 0.5em;
   text-align: center;
-  text-shadow: 2px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 .description {
   color: #000;
-  font-size: 0.8em;
+  font-size: 0.9rem;
   line-height: 1.8em;
   margin-bottom: 1em;
 }
@@ -261,38 +266,34 @@ section {
 }
 
 .code-site-containers .github-btn {
-  -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
-  color: #000000;
+  border: 2px solid #2f4454;
+  color: #ffffff;
+  background-color: #2f4454;
   width: 100%;
-  border-radius: 0.4em;
-  background-color: #0049ff;
+  border-radius: 5rem;
   margin-right: 1em;
 }
 
 .code-site-containers .github-btn:hover {
-  background-color: #2760f0;
-  color: #ffffff;
+  color: #2f4454;
+  background-color: #fff;
 }
 
 .code-site-containers .live-btn {
-  -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
-  color: #000000;
   width: 100%;
-  border-radius: 0.4em;
-  background-color: #ffb600;
+  border-radius: 5rem;
+  border: 2px solid #376e6f;
+  color: #ffffff;
+  background-color: #376e6f;
 }
 
 .code-site-containers .live-btn:hover {
-  background-color: #ffc123;
-  color: #ffffff;
+  color: #376e6f;
+  background-color: #fff;
 }
 
 .portfolio-container a img {
   border-radius: 1em;
-  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
-          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
 }
 
 .site-screenshot {
@@ -311,7 +312,7 @@ section {
 
 .skills-heading-container .skills-heading {
   font-family: "Permanent Marker", cursive;
-  color: #ffb600;
+  color: #ffe400;
   font-weight: 900;
   font-size: 2.5em;
   letter-spacing: 0.17em;
@@ -321,14 +322,14 @@ section {
 
 .skills-heading-container .skills-heading mark {
   color: #fff;
-  background-color: #0049ff;
+  background-color: #14a76c;
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.35em;
 }
 
 .skills {
-  background-color: #141824;
+  background-color: #272727;
   padding-top: 3em;
 }
 
@@ -339,7 +340,7 @@ section {
   margin-bottom: 1em;
 }
 
-.skills-container ul li .icon-container {
+.skills-container ul li .primary-desc .icon-container {
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -348,25 +349,34 @@ section {
   margin: 0 auto;
 }
 
-.skills-container ul li .icon-container.one {
-  color: #0049ff;
-}
-
-.skills-container ul li .icon-container.two {
-  color: #ffb600;
-}
-
-.skills-container ul li .icon-container.three {
-  color: #0049ff;
-}
-
-.skills-container ul li .skill-title {
+.skills-container ul li .primary-desc .skill-title {
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+  letter-spacing: 0.1rem;
 }
 
-.skills-container ul li .description {
-  margin-bottom: 2em;
+.skills-container ul li .primary-desc .description {
+  margin-bottom: 3.5rem;
+}
+
+.skills-container ul li .secondary-desc h3 {
+  color: #14a76c;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.8rem;
+}
+
+.skills-container ul li .secondary-desc ul {
+  list-style-type: disc;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.skills-container ul li .secondary-desc ul li {
+  font-size: 0.9rem;
+  padding: 0 5% 15px 5%;
+  margin: 0;
 }
 
 .about-heading-container {
@@ -380,8 +390,6 @@ section {
 }
 
 .about-heading-container .about-heading {
-  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
-  color: #141824;
   font-family: "Permanent Marker", cursive;
   font-weight: 900;
   font-size: 2.5em;
@@ -391,18 +399,99 @@ section {
 }
 
 .about-heading-container .about-heading mark {
-  background-color: #ffb600;
+  background-color: #ffe400;
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.35em;
 }
 
 .about {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.about img {
-  border-radius: 1em;
+.about .about-left {
+  margin-bottom: 1em;
+}
+
+.about .about-left svg {
+  width: 100%;
+  height: auto;
+}
+
+.about #minute {
+  -webkit-animation: move-clock-hands 1s linear infinite;
+          animation: move-clock-hands 1s linear infinite;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transform-box: fill-box;
+}
+
+.about #hour {
+  -webkit-animation: move-clock-hands 12s linear infinite;
+          animation: move-clock-hands 12s linear infinite;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transform-box: fill-box;
+}
+
+.about #body,
+.about #head-neck {
+  -webkit-animation: move-body 5s infinite;
+          animation: move-body 5s infinite;
+  -webkit-transform-origin: 50% 100% 0;
+          transform-origin: 50% 100% 0;
+}
+
+@-webkit-keyframes move-clock-hands {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes move-clock-hands {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes move-body {
+  0%,
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+@keyframes move-body {
+  0%,
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
 }
 
 .footer {
@@ -425,11 +514,11 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #141824;
+  background-color: #272727;
 }
 
 .footer p {
-  color: #ffb600;
+  color: #ffe400;
 }
 
 .footer p a {
@@ -438,7 +527,7 @@ section {
 }
 
 .footer p a:hover {
-  color: #0049ff;
+  color: pink;
 }
 
 @media only screen and (min-width: 800px) {
@@ -446,11 +535,9 @@ section {
     padding-left: 8em;
     padding-right: 8em;
   }
-  .about,
   .portfolio {
     text-align: left;
   }
-  .about,
   .portfolio-container {
     display: -ms-grid;
     display: grid;
@@ -473,6 +560,20 @@ section {
     -ms-grid-columns: (auto)[3];
         grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
+  }
+  .skills-container ul li .secondary-desc ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-container ul li .secondary-desc ul li {
+    font-size: 0.9rem;
+    padding: 0 5%;
+    margin: 0;
   }
   .portfolio {
     padding-top: 4em;
@@ -508,7 +609,7 @@ section {
     background: unset;
   }
   .nav-container header {
-    background: #141824;
+    background: #272727;
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -540,7 +641,7 @@ section {
     color: #000;
   }
   .social-header ul a:hover {
-    color: #0049ff;
+    color: purple;
   }
   .hero {
     display: -ms-grid;
@@ -551,7 +652,7 @@ section {
     padding: 0;
   }
   .hero .content {
-    background: #141824;
+    background: #272727;
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
