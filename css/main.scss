@@ -522,7 +522,7 @@ section {
 
   #body,
   #head-neck {
-    animation: move-body 5s infinite;
+    animation: move-body 4s infinite;
     transform-origin: 50% 100% 0;
   }
 
@@ -538,10 +538,10 @@ section {
   @keyframes move-body {
     0%,
     100% {
-      transform: rotate(-2deg);
+      transform: rotate(-5deg);
     }
     50% {
-      transform: rotate(2deg);
+      transform: rotate(5deg);
     }
   }
 }

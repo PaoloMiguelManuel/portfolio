@@ -468,8 +468,8 @@ section {
 
 .about #body,
 .about #head-neck {
-  -webkit-animation: move-body 5s infinite;
-          animation: move-body 5s infinite;
+  -webkit-animation: move-body 4s infinite;
+          animation: move-body 4s infinite;
   -webkit-transform-origin: 50% 100% 0;
           transform-origin: 50% 100% 0;
 }
@@ -499,24 +499,24 @@ section {
 @-webkit-keyframes move-body {
   0%,
   100% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
   }
   50% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
 }
 
 @keyframes move-body {
   0%,
   100% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
   }
   50% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
 }
 
