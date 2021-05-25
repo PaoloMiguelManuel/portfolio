@@ -424,6 +424,32 @@ section {
   height: auto;
 }
 
+.about .about-right .about-greeting {
+  letter-spacing: 0.2rem;
+  color: #272727;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about .about-right .about-name {
+  color: #2e9cca;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.about .about-right .about-description {
+  font-size: 0.9em;
+  text-align: center;
+}
+
 .about #minute {
   -webkit-animation: move-clock-hands 1s linear infinite;
           animation: move-clock-hands 1s linear infinite;

@@ -478,6 +478,33 @@ section {
   .about-right {
     // background-color: purple;
     // flex-grow: 3;
+      .about-greeting {
+        letter-spacing: 0.2rem;
+        color: $backgroundColour;
+        font-weight: bold;
+        font-size: 1.3rem;
+        // margin-top: -0.4em;
+        margin-bottom: 0.5em;
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .about-name {
+        color: $secondaryColour;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        font-size: 0.9rem;
+        margin-bottom: 0.5em;
+        text-align: center;
+      }
+
+      .about-description {
+
+        font-size: 0.9em;
+        text-align: center;
+      }
   }
 
 
