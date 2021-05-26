@@ -12,7 +12,8 @@ body {
 }
 
 .background {
-  background-color: #e5e8e8;
+  background: -webkit-gradient(linear, left top, right bottom, from(#e5e8e8), color-stop(#d9dcdc), color-stop(#ced1d1), color-stop(#c2c5c5), to(#b7baba));
+  background: linear-gradient(to right bottom, #e5e8e8, #d9dcdc, #ced1d1, #c2c5c5, #b7baba);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -87,18 +88,19 @@ header ul a {
 }
 
 .hero {
-  background: #272727;
-  color: #ffe400;
   display: -ms-grid;
   display: grid;
+  background: #272727;
   text-align: center;
   padding: 2em 4em 4em 4em;
+  text-align: center;
 }
 
 .hero h1 {
   color: #ffffff;
   text-transform: uppercase;
   font-family: "Permanent Marker", cursive;
+  text-align: center;
 }
 
 .hero h1 span {
@@ -112,6 +114,7 @@ header ul a {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .hero h2 span {
@@ -122,14 +125,10 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .name-pic h1 {
@@ -139,6 +138,8 @@ header ul a {
 }
 
 .name-pic img {
+  display: block;
+  margin: 0 auto;
   height: 200px;
 }
 
@@ -159,7 +160,7 @@ header ul a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2e9cca;
+  background-color: #14a76c;
   border-radius: 11px;
   z-index: -2;
 }
@@ -467,7 +468,6 @@ section {
   color: #272727;
   font-weight: bold;
   font-size: 1.3rem;
-  margin-bottom: 0.5em;
   display: block;
   text-transform: uppercase;
   text-align: center;
@@ -479,83 +479,13 @@ section {
   font-weight: bold;
   letter-spacing: 0.1em;
   font-size: 0.9rem;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
   text-align: center;
 }
 
 .about .about-details .about-description {
   font-size: 0.9em;
   text-align: center;
-}
-
-.about #minute {
-  -webkit-animation: move-clock-hands 1s linear infinite;
-          animation: move-clock-hands 1s linear infinite;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  transform-box: fill-box;
-}
-
-.about #hour {
-  -webkit-animation: move-clock-hands 12s linear infinite;
-          animation: move-clock-hands 12s linear infinite;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  transform-box: fill-box;
-}
-
-.about #body,
-.about #head-neck {
-  -webkit-animation: move-body 4s infinite;
-          animation: move-body 4s infinite;
-  -webkit-transform-origin: 50% 100% 0;
-          transform-origin: 50% 100% 0;
-}
-
-@-webkit-keyframes move-clock-hands {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-}
-
-@keyframes move-clock-hands {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-}
-
-@-webkit-keyframes move-body {
-  0%,
-  100% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  50% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-}
-
-@keyframes move-body {
-  0%,
-  100% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  50% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
 }
 
 .footer {
@@ -583,22 +513,19 @@ section {
 
 .footer p {
   color: #ffe400;
+  font-size: 1.5rem;
 }
 
 .footer p a {
   color: #ffffff;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .footer p a:hover {
-  color: pink;
+  color: #ffe400;
 }
 
 @media only screen and (min-width: 800px) {
-  .name-pic img {
-    padding-left: 8em;
-    padding-right: 8em;
-  }
   .portfolio {
     text-align: left;
   }
@@ -678,9 +605,6 @@ section {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .name-pic h1 {
-    margin-right: 1em;
-  }
   .name-pic img {
     padding-left: 0;
   }
@@ -737,7 +661,6 @@ section {
   .hero .content {
     background: #272727;
     padding: 6em 8em 6em 4em;
-    text-align: left;
   }
   .meet {
     color: royalblue;
@@ -779,7 +702,7 @@ section {
     padding: 4em 20em 4em 20em;
   }
   .hero .content {
-    padding: 9em 20em 6em 20em;
+    padding: 9em 10em 6em 10em;
   }
 }
 /*# sourceMappingURL=main.css.map */

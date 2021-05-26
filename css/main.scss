@@ -1,10 +1,7 @@
 $backgroundColour: #272727;
 $primaryColour: #ffe400;
-// $secondaryColour: #ff652f;
 $secondaryColour: #2e9cca;
-
 $tertiaryColour: #14a76c;
-
 $githubBtnColour: #2f4454;
 $liveBtnColour: #376e6f;
 
@@ -18,13 +15,10 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  // background-color: red;
 }
 
 .background {
-  background-color: #e5e8e8;
-  // background: rgb(255,182,0);
-  // background: linear-gradient(90deg, rgba(255,182,0,1) 0%, rgba(0,73,255,1) 100%);
+  background: linear-gradient(to right bottom, #e5e8e8, #d9dcdc, #ced1d1, #c2c5c5, #b7baba);  
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -51,30 +45,19 @@ a {
   a {
     color: white;
     font-size: 0.9rem;
-
     &:hover {
       color: $primaryColour;
     }
   }
-
   .initials {
     font-size: 1.5rem;
     font-family: "Vampiro One", cursive;
     margin-right: 0.5em;
     color: $primaryColour;
   }
-
   i {
     font-size: 1.5em;
-    // color: #000000;
   }
-
-  // .nav-cust-border:hover {
-  //   // color: red;
-  //   color: $primaryColour;
-  //   // border-bottom: 2px solid #fff;
-  //   // border-bottom-width: 20px;
-  // }
 }
 
 header {
@@ -82,15 +65,8 @@ header {
   justify-content: space-between;
   padding: 2em;
   background-color: $backgroundColour;
-
-  // .logo {
-  //   color: #ffffff;
-  //   font-weight: bold;
-  // }
-
   ul {
     display: flex;
-
     a {
       display: block;
       padding: 0 1em;
@@ -105,23 +81,20 @@ header {
 }
 
 .hero {
-  // height: 100%;
-  background: $backgroundColour;
-  color: $primaryColour;
   display: grid;
+  background: $backgroundColour;
   text-align: center;
   padding: 2em 4em 4em 4em;
-
+  text-align: center;
   h1 {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Permanent Marker", cursive;
-    // letter-spacing: 20px;
+    text-align: center;
     span {
       color: $primaryColour;
     }
   }
-
   h2 {
     color: #ffffff;
     font-family: "Permanent Marker", cursive;
@@ -129,6 +102,8 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 1.5rem;
+    text-align: center;
+
     span {
       color: $primaryColour;
     }
@@ -136,26 +111,24 @@ header {
 }
 
 .name-pic {
-  // width: 100px;
+  // background: red;
+  display: flex;
+  flex-direction: column;
   h1 {
     font-size: 3rem;
     margin-bottom: 0;
     letter-spacing: 5px;
   }
-  // background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   img {
-    // padding-left: 1em;
+    display: block;
+    margin: 0 auto;
+    // background: blue;
     height: 200px;
-    // padding: 1em;
-    // background-color: red;
   }
 }
 
 .contact-btn {
+  // background: orange;
   display: inline-block;
   padding: 0.75rem 1.25rem;
   border-radius: 11px;
@@ -174,7 +147,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $secondaryColour;
+    background-color: $tertiaryColour;
     border-radius: 11px;
     z-index: -2;
   }
@@ -361,6 +334,8 @@ section {
   background-color: $backgroundColour;
   // height: 100vh;
   padding-top: 3em;
+
+
 }
 
 .skills-container ul li {
@@ -471,14 +446,14 @@ section {
       height: auto;
       border-radius: 2em;
     }
-    
+
     .about-image-container {
       position: relative;
       width: 100%;
       max-width: 400px;
       height: auto;
     }
-    
+
     .about-image-container:after {
       border-radius: 2em;
       content: "";
@@ -499,7 +474,7 @@ section {
       color: $backgroundColour;
       font-weight: bold;
       font-size: 1.3rem;
-      margin-bottom: 0.5em;
+      // margin-bottom: 0.5em;
       display: block;
       text-transform: uppercase;
       text-align: center;
@@ -511,7 +486,7 @@ section {
       font-weight: bold;
       letter-spacing: 0.1em;
       font-size: 0.9rem;
-      margin-bottom: 0.5em;
+      margin: 0.5em 0;
       text-align: center;
     }
 
@@ -521,42 +496,42 @@ section {
     }
   }
 
-  #minute {
-    animation: move-clock-hands 1s linear infinite;
-    transform-origin: left;
-    transform-box: fill-box;
-  }
+  // #minute {
+  //   animation: move-clock-hands 1s linear infinite;
+  //   transform-origin: left;
+  //   transform-box: fill-box;
+  // }
 
-  #hour {
-    animation: move-clock-hands 12s linear infinite;
-    transform-origin: left;
-    transform-box: fill-box;
-  }
+  // #hour {
+  //   animation: move-clock-hands 12s linear infinite;
+  //   transform-origin: left;
+  //   transform-box: fill-box;
+  // }
 
-  #body,
-  #head-neck {
-    animation: move-body 4s infinite;
-    transform-origin: 50% 100% 0;
-  }
+  // #body,
+  // #head-neck {
+  //   animation: move-body 4s infinite;
+  //   transform-origin: 50% 100% 0;
+  // }
 
-  @keyframes move-clock-hands {
-    from {
-      transform: rotateZ(0deg);
-    }
-    to {
-      transform: rotateZ(360deg);
-    }
-  }
+  // @keyframes move-clock-hands {
+  //   from {
+  //     transform: rotateZ(0deg);
+  //   }
+  //   to {
+  //     transform: rotateZ(360deg);
+  //   }
+  // }
 
-  @keyframes move-body {
-    0%,
-    100% {
-      transform: rotate(-5deg);
-    }
-    50% {
-      transform: rotate(5deg);
-    }
-  }
+  // @keyframes move-body {
+  //   0%,
+  //   100% {
+  //     transform: rotate(-5deg);
+  //   }
+  //   50% {
+  //     transform: rotate(5deg);
+  //   }
+  // }
 }
 
 // .about {
@@ -586,12 +561,14 @@ section {
 
   p {
     color: $primaryColour;
+    font-size: 1.5rem;
     a {
       color: #ffffff;
-      padding: 0 5px;
+      padding: 0 10px;
+      // margin: 0 15px;
 
       &:hover {
-        color: pink;
+        color: $primaryColour;
       }
     }
   }
@@ -599,12 +576,12 @@ section {
 
 // media queries
 @media only screen and (min-width: 800px) {
-  .name-pic {
-    img {
-      padding-left: 8em;
-      padding-right: 8em;
-    }
-  }
+  // .name-pic {
+  //   img {
+  //     padding-left: 8em;
+  //     padding-right: 8em;
+  //   }
+  // }
 
   // .about,
   .portfolio {
@@ -693,7 +670,7 @@ section {
     // position: relative;
     justify-content: flex-start;
     h1 {
-      margin-right: 1em;
+      // margin-right: 1em;
     }
     img {
       // background: pink;
@@ -768,7 +745,7 @@ section {
     .content {
       background: $backgroundColour;
       padding: 6em 8em 6em 4em;
-      text-align: left;
+      // text-align: left;
 
       h1 {
         // font-size: 2.5em;
@@ -815,8 +792,6 @@ section {
     float: right;
     max-width: 500px;
   }
-
-
 }
 
 @media only screen and (min-width: 1250px) {
@@ -851,6 +826,6 @@ section {
   }
 
   .hero .content {
-    padding: 9em 20em 6em 20em;
+    padding: 9em 10em 6em 10em;
   }
 }
