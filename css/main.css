@@ -42,7 +42,6 @@ a {
 .nav-container a {
   color: white;
   font-size: 0.9rem;
-  letter-spacing: 1.3px;
 }
 
 .nav-container a:hover {
@@ -270,7 +269,7 @@ section {
   color: #ffffff;
   background-color: #2f4454;
   width: 100%;
-  border-radius: 5rem;
+  border-radius: 1rem;
   margin-right: 1em;
 }
 
@@ -281,7 +280,7 @@ section {
 
 .code-site-containers .live-btn {
   width: 100%;
-  border-radius: 5rem;
+  border-radius: 1rem;
   border: 2px solid #376e6f;
   color: #ffffff;
   background-color: #376e6f;
@@ -349,6 +348,18 @@ section {
   margin: 0 auto;
 }
 
+.skills-container ul li .primary-desc .icon-container.one {
+  color: #14a76c;
+}
+
+.skills-container ul li .primary-desc .icon-container.two {
+  color: #14a76c;
+}
+
+.skills-container ul li .primary-desc .icon-container.three {
+  color: #14a76c;
+}
+
 .skills-container ul li .primary-desc .skill-title {
   font-weight: bold;
   font-size: 1.2rem;
@@ -399,7 +410,7 @@ section {
 }
 
 .about-heading-container .about-heading mark {
-  background-color: #ffe400;
+  background-color: #2e9cca;
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.35em;
@@ -415,16 +426,43 @@ section {
           flex-direction: column;
 }
 
-.about .about-left {
-  margin-bottom: 1em;
+.about .about-display {
+  margin-bottom: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.about .about-left svg {
+.about .about-display .about-img {
   width: 100%;
+  height: auto;
+  border-radius: 2em;
+}
+
+.about .about-display .about-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
-.about .about-right .about-greeting {
+.about .about-display .about-image-container:after {
+  border-radius: 2em;
+  content: "";
+  position: absolute;
+  top: 0.9em;
+  left: 1.5em;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #2e9bca90;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about .about-details .about-greeting {
   letter-spacing: 0.2rem;
   color: #272727;
   font-weight: bold;
@@ -435,7 +473,7 @@ section {
   text-align: center;
 }
 
-.about .about-right .about-name {
+.about .about-details .about-name {
   color: #2e9cca;
   text-transform: uppercase;
   font-weight: bold;
@@ -445,7 +483,7 @@ section {
   text-align: center;
 }
 
-.about .about-right .about-description {
+.about .about-details .about-description {
   font-size: 0.9em;
   text-align: center;
 }
@@ -606,6 +644,25 @@ section {
   }
   .portfolio-container img {
     margin-left: 2em;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .about-details {
+    margin-left: 50px;
+    width: 60%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 

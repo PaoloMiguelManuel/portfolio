@@ -51,8 +51,6 @@ a {
   a {
     color: white;
     font-size: 0.9rem;
-    letter-spacing: 1.3px;
-    // text-transform: uppercase;
 
     &:hover {
       color: $primaryColour;
@@ -60,7 +58,6 @@ a {
   }
 
   .initials {
-    // color: red;
     font-size: 1.5rem;
     font-family: "Vampiro One", cursive;
     margin-right: 0.5em;
@@ -289,7 +286,7 @@ section {
     background-color: $githubBtnColour;
     // width: 200px;
     width: 100%;
-    border-radius: 5rem;
+    border-radius: 1rem;
     // background-color: $githubBtnColour;
     margin-right: 1em;
     &:hover {
@@ -304,7 +301,7 @@ section {
     // color: #fff;
     // width:
     width: 100%;
-    border-radius: 5rem;
+    border-radius: 1rem;
     // background-color: $liveBtnColour;
 
     // background-color: #6c3da8;
@@ -385,12 +382,14 @@ section {
       margin: 0 auto;
 
       &.one {
-        // color: $primaryColour;
+        color: $tertiaryColour;
       }
       &.two {
+        color: $tertiaryColour;
         // color: $secondaryColour;
       }
       &.three {
+        color: $tertiaryColour;
         // color: $tertiaryColour;
       }
     }
@@ -447,7 +446,7 @@ section {
     margin: 0;
 
     mark {
-      background-color: $primaryColour;
+      background-color: $secondaryColour;
       display: inline-block;
       line-height: 0em;
       padding-bottom: 0.35em;
@@ -456,57 +455,71 @@ section {
 }
 
 .about {
-  // text-align: center;
+  // background: yellow;
   display: flex;
-  // grid-template-columns: auto 40%;
-
   flex-direction: column;
 
-  .about-left {
-    // background-color: red;
-    // margin-bottom: 1em;
-    // width: 25vh;
-    // background-color: red;
-    svg {
-      // height: 30vh;
+  .about-display {
+    // background: red;
+    margin-bottom: 2.5em;
+    // background-color: blue;
+    display: flex;
+    justify-content: center;
+
+    .about-img {
       width: 100%;
       height: auto;
+      border-radius: 2em;
     }
-    margin-bottom: 1em;
+    
+    .about-image-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+    
+    .about-image-container:after {
+      border-radius: 2em;
+      content: "";
+      position: absolute;
+      top: 0.9em;
+      left: 1.5em;
+      width: 100%;
+      height: 100%;
+      border: 10px solid #2e9bca90;
+      box-sizing: border-box;
+    }
   }
 
-  .about-right {
-    // background-color: purple;
-    // flex-grow: 3;
-      .about-greeting {
-        letter-spacing: 0.2rem;
-        color: $backgroundColour;
-        font-weight: bold;
-        font-size: 1.3rem;
-        // margin-top: -0.4em;
-        margin-bottom: 0.5em;
-        display: block;
-        text-transform: uppercase;
-        text-align: center;
-      }
+  .about-details {
+    // background: blue;
+    .about-greeting {
+      letter-spacing: 0.2rem;
+      color: $backgroundColour;
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: 0.5em;
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+    }
 
-      .about-name {
-        color: $secondaryColour;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-        font-size: 0.9rem;
-        margin-bottom: 0.5em;
-        text-align: center;
-      }
+    .about-name {
+      color: $secondaryColour;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      font-size: 0.9rem;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
 
-      .about-description {
-
-        font-size: 0.9em;
-        text-align: center;
-      }
+    .about-description {
+      font-size: 0.9em;
+      text-align: center;
+    }
   }
-
 
   #minute {
     animation: move-clock-hands 1s linear infinite;
@@ -655,6 +668,17 @@ section {
   .portfolio-container img {
     margin-left: 2em;
   }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .about-details {
+      margin-left: 50px;
+      width: 60%;
+      align-self: center;
+    }
+  }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -791,6 +815,8 @@ section {
     float: right;
     max-width: 500px;
   }
+
+
 }
 
 @media only screen and (min-width: 1250px) {

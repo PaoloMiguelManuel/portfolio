@@ -25,10 +25,10 @@ gsap.from('.circ-anim', {
    duration: 1
 })
 
-gsap.from('.transition2', {
+gsap.from('.scroll-transition', {
    scrollTrigger: {
-      trigger: '.transition2',
-      // when top of transition2 elements hits bottom of scroll bar then something animates
+      trigger: '.scroll-transition',
+      // when top of scroll-transition elements hits bottom of scroll bar then something animates
       start: "top bottom"
    },
    y: 50,
@@ -37,14 +37,14 @@ gsap.from('.transition2', {
    stagger: .3
 })
 
-gsap.from('.transition3', {
-   scrollTrigger: {
-      trigger: '.transition3',
-      // when top of transition2 elements hits bottom of scroll bar then something animates
-      start: "top center"
-   },
-   y: 50,
-   opacity: 0,
-   duration: 1.2,
-   stagger: .6
-})
+// gsap.from('.transition3', {
+//    scrollTrigger: {
+//       trigger: '.transition3',
+//       // when top of scroll-transition elements hits bottom of scroll bar then something animates
+//       start: "top center"
+//    },
+//    y: 50,
+//    opacity: 0,
+//    duration: 1.2,
+//    stagger: .6
+// })
