@@ -45,16 +45,19 @@ a {
   a {
     color: white;
     font-size: 0.9rem;
+
     &:hover {
       color: $primaryColour;
     }
   }
+
   .initials {
     font-size: 1.5rem;
     font-family: "Vampiro One", cursive;
     margin-right: 0.5em;
     color: $primaryColour;
   }
+
   i {
     font-size: 1.5em;
   }
@@ -65,8 +68,10 @@ header {
   justify-content: space-between;
   padding: 2em;
   background-color: $backgroundColour;
+
   ul {
     display: flex;
+
     a {
       display: block;
       padding: 0 1em;
@@ -86,15 +91,18 @@ header {
   text-align: center;
   padding: 2em 4em 4em 4em;
   text-align: center;
+
   h1 {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Permanent Marker", cursive;
     text-align: center;
+
     span {
       color: $primaryColour;
     }
   }
+
   h2 {
     color: #ffffff;
     font-family: "Permanent Marker", cursive;
@@ -111,35 +119,31 @@ header {
 }
 
 .name-pic {
-  // background: red;
   display: flex;
   flex-direction: column;
+
   h1 {
     font-size: 3rem;
     margin-bottom: 0;
     letter-spacing: 5px;
   }
+
   img {
     display: block;
     margin: 0 auto;
-    // background: blue;
     height: 200px;
   }
 }
 
 .contact-btn {
-  // background: orange;
   display: inline-block;
   padding: 0.75rem 1.25rem;
   border-radius: 11px;
   color: #fff;
-  // text-transform: uppercase;
-  // font-size: 1rem;
-  // letter-spacing: .15rem;
-  // transition: all .6s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+
   &:after {
     content: "";
     position: absolute;
@@ -151,6 +155,7 @@ header {
     border-radius: 11px;
     z-index: -2;
   }
+
   &:before {
     content: "";
     position: absolute;
@@ -158,14 +163,15 @@ header {
     left: 0;
     width: 0%;
     height: 100%;
-    // background-color: darken($color, 15%);
     background-color: $primaryColour;
     transition: all 0.3s;
     border-radius: 11px;
     z-index: -1;
   }
+
   &:hover {
     color: $backgroundColour;
+
     &:before {
       width: 100%;
     }
@@ -177,12 +183,11 @@ section {
   text-align: center;
 }
 
-// portfolio section
-.portfolio-heading-container {
+.projects-heading-container {
   display: flex;
   justify-content: center;
   padding-top: 3em;
-  .portfolio-heading {
+  .projects-heading {
     // font-style: italic;
     // text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
 
@@ -204,7 +209,7 @@ section {
   }
 }
 
-.portfolio-container {
+.project-container {
   // background-color: red;
   margin-bottom: 3em;
 }
@@ -290,7 +295,7 @@ section {
   }
 }
 
-.portfolio-container a img {
+.project-container a img {
   border-radius: 1em;
   // box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
 
@@ -561,7 +566,7 @@ section {
 
   p {
     color: $primaryColour;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     a {
       color: #ffffff;
       padding: 0 10px;
@@ -575,7 +580,7 @@ section {
 }
 
 // media queries
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   // .name-pic {
   //   img {
   //     padding-left: 8em;
@@ -584,18 +589,18 @@ section {
   // }
 
   // .about,
-  .portfolio {
+  .projects {
     text-align: left;
   }
 
   // .about,
-  .portfolio-container {
+  .project-container {
     display: grid;
     grid-template-columns: 40% auto;
   }
 
   .left,
-  .portfolio-left {
+  .project-info {
     display: grid;
     place-content: center;
     // text-transform: uppercase
@@ -638,11 +643,11 @@ section {
     }
   }
 
-  .portfolio {
+  .projects {
     padding-top: 4em;
   }
 
-  .portfolio-container img {
+  .project-container img {
     margin-left: 2em;
   }
 
@@ -658,7 +663,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 992px) {
   .hero {
     height: 95vh;
     // display: grid;
@@ -788,13 +793,13 @@ section {
     // margin-bottom: 0%;
   }
 
-  .portfolio img {
+  .projects img {
     float: right;
     max-width: 500px;
   }
 }
 
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 1200px) {
   header {
     padding: 2em 2em 2em 10em;
   }
@@ -812,7 +817,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1400px) {
   header {
     padding: 2em 2em 2em 20em;
   }

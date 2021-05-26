@@ -192,7 +192,7 @@ section {
   text-align: center;
 }
 
-.portfolio-heading-container {
+.projects-heading-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +202,7 @@ section {
   padding-top: 3em;
 }
 
-.portfolio-heading-container .portfolio-heading {
+.projects-heading-container .projects-heading {
   font-family: "Permanent Marker", cursive;
   font-weight: 900;
   font-size: 2.5em;
@@ -211,14 +211,14 @@ section {
   margin: 0;
 }
 
-.portfolio-heading-container .portfolio-heading mark {
+.projects-heading-container .projects-heading mark {
   background-color: #2e9cca;
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.35em;
 }
 
-.portfolio-container {
+.project-container {
   margin-bottom: 3em;
 }
 
@@ -292,7 +292,7 @@ section {
   background-color: #fff;
 }
 
-.portfolio-container a img {
+.project-container a img {
   border-radius: 1em;
 }
 
@@ -513,7 +513,7 @@ section {
 
 .footer p {
   color: #ffe400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .footer p a {
@@ -525,18 +525,18 @@ section {
   color: #ffe400;
 }
 
-@media only screen and (min-width: 800px) {
-  .portfolio {
+@media only screen and (min-width: 768px) {
+  .projects {
     text-align: left;
   }
-  .portfolio-container {
+  .project-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
   }
   .left,
-  .portfolio-left {
+  .project-info {
     display: -ms-grid;
     display: grid;
     place-content: center;
@@ -566,10 +566,10 @@ section {
     padding: 0 5%;
     margin: 0;
   }
-  .portfolio {
+  .projects {
     padding-top: 4em;
   }
-  .portfolio-container img {
+  .project-container img {
     margin-left: 2em;
   }
   .about {
@@ -593,7 +593,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 992px) {
   .hero {
     height: 95vh;
   }
@@ -670,13 +670,13 @@ section {
     margin-left: -50%;
     width: 100%;
   }
-  .portfolio img {
+  .projects img {
     float: right;
     max-width: 500px;
   }
 }
 
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 1200px) {
   header {
     padding: 2em 2em 2em 10em;
   }
@@ -691,7 +691,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1400px) {
   header {
     padding: 2em 2em 2em 20em;
   }
