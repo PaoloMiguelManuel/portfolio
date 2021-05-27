@@ -13,7 +13,6 @@ $liveBtnColour: #376e6f;
 
 body {
   height: 100vh;
-  margin: 0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -40,8 +39,6 @@ nav {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -99,13 +96,11 @@ header {
   background: $backgroundColour;
   text-align: center;
   padding: 2em 4em 4em 4em;
-  text-align: center;
 
   h1 {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Permanent Marker", cursive;
-    text-align: center;
 
     span {
       color: $primaryColour;
@@ -117,9 +112,8 @@ header {
     font-family: "Permanent Marker", cursive;
     padding: 1em 0;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.2em;
     font-size: 1.5rem;
-    text-align: center;
 
     span {
       color: $primaryColour;
@@ -133,8 +127,7 @@ header {
 
   h1 {
     font-size: 3rem;
-    margin-bottom: 0;
-    letter-spacing: 5px;
+    letter-spacing: 0.1em;
   }
 
   img {
@@ -161,7 +154,6 @@ header {
     width: 100%;
     height: 100%;
     background-color: $tertiaryColour;
-    // border-radius: 11px;
     z-index: -2;
   }
 
@@ -174,7 +166,6 @@ header {
     height: 100%;
     background-color: $primaryColour;
     transition: all 0.3s;
-    // border-radius: 11px;
     z-index: -1;
   }
 
@@ -203,7 +194,7 @@ section {
     font-size: 2.5rem;
     letter-spacing: 0.17em;
     text-transform: uppercase;
-    margin: 0;
+    // margin: 0;
 
     mark {
       background-color: $secondaryColour;
@@ -216,10 +207,6 @@ section {
 
 .project-container {
   margin-bottom: 3em;
-}
-
-.inner {
-  margin-bottom: 1.5em;
 }
 
 .project-title {
@@ -252,13 +239,15 @@ section {
   justify-content: center;
   font-size: 1.8rem;
   text-align: center;
+  margin-bottom: 0.5em;
 
   .github-btn {
     color: #ffffff;
-    background-color: $githubBtnColour;
     width: 100%;
-    border-radius: 0.3em;
-    margin-right: 1em;
+    background-color: $githubBtnColour;
+    border: 2px solid $githubBtnColour;
+    border-radius: 0.5em;
+    margin: 0 0.5em;
 
     &:hover {
       color: $githubBtnColour;
@@ -268,9 +257,11 @@ section {
   }
   .live-btn {
     color: #ffffff;
-    background-color: $liveBtnColour;
     width: 100%;
-    border-radius: 0.3em;
+    background-color: $liveBtnColour;
+    border: 2px solid $liveBtnColour;
+    border-radius: 0.5em;
+    margin: 0 0.5em;
 
     &:hover {
       color: $liveBtnColour;
@@ -281,7 +272,7 @@ section {
 }
 
 .project-container img {
-  border-radius: 0.5em;
+  border-radius: 1em;
 }
 
 .site-screenshot {
@@ -300,7 +291,6 @@ section {
     font-weight: 900;
     letter-spacing: 0.17em;
     text-transform: uppercase;
-    margin: 0;
 
     mark {
       color: #fff;
@@ -329,7 +319,6 @@ section {
       place-content: center;
       height: 50px;
       font-size: 3rem;
-      margin: 0 auto;
     }
 
     .skill-title {
@@ -374,11 +363,10 @@ section {
 
   .about-heading {
     font-family: "Permanent Marker", cursive;
-    font-weight: 900;
     font-size: 2.5rem;
-    letter-spacing: 0.17em;
+    font-weight: 900;
     text-transform: uppercase;
-    margin: 0;
+    letter-spacing: 0.17em;
 
     mark {
       background-color: $secondaryColour;
@@ -393,13 +381,11 @@ section {
   display: flex;
   flex-direction: column;
 
-  // working
-  .about-display-pic {
+  .about-left {
     display: flex;
     justify-content: center;
     margin-bottom: 2.5em;
 
-    
     .about-image-container {
       position: relative;
       width: 70%;
@@ -426,57 +412,22 @@ section {
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .about-details {
-    // width: 100%;
+  .about-right {
     .about-greeting {
-      color: $backgroundColour;
-      font-weight: bold;
       font-size: 1.3rem;
-      letter-spacing: 0.3em;
+      color: $backgroundColour;
       text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.3em;
     }
 
     .about-name {
+      font-size: 0.9rem;
+      margin: 0.5em 0;
       color: $secondaryColour;
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 1px;
-      font-size: 0.9rem;
-      margin: 0.5em 0;
     }
 
     .about-description {
@@ -488,18 +439,17 @@ section {
 .footer {
   height: 10vh;
   padding: 0;
-  margin: 0;
 
   div {
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: space-around;
-    height: 100%;
     background-color: $backgroundColour;
 
     p {
-      color: $primaryColour;
       font-size: 1.2rem;
+      color: $primaryColour;
 
       a {
         color: #ffffff;
@@ -517,50 +467,33 @@ section {
 // media queries ----------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 768px) {
-  // .name-pic {
-  //   img {
-  //     padding-left: 8em;
-  //     padding-right: 8em;
-  //   }
-  // }
-
-  // .about,
   .projects {
-    text-align: left;
-  }
+    padding-top: 3em;
+    
+    .project-container {
+      margin-bottom: 4em;
+      display: grid;
+      grid-template-columns: 40% auto;
 
-  // .about,
-  .project-container {
-    display: grid;
-    grid-template-columns: 40% auto;
-  }
+      .description {
+        text-align: left;
+      }
 
-  .left,
-  .project-info {
-    display: grid;
-    place-content: center;
-    // text-transform: uppercase
-  }
-
-  .right {
-    margin-left: 2em;
-    margin-top: 1em;
-    // mari
-  }
-
-  // overlapping effect
-  .skills {
-    // margin-top: -5em;
-    // margin-bottom: -7em;
-    // padding-top: 7em;
+      .site-screenshot-url {
+        align-self: center;
+        margin-left: 1em;
+      }
+    }
   }
 
   .skills-container ul {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
 
     li {
+      margin: 0;    
+
       .secondary-desc {
         ul {
           display: flex;
@@ -568,23 +501,11 @@ section {
 
           li {
             font-size: 0.9rem;
-            // color: red;
-            // padding: 0 !important;
-            padding: 0 5%;
-            // padding-top: 0;
-            margin: 0;
+            padding-bottom: 0;
           }
         }
       }
     }
-  }
-
-  .projects {
-    padding-top: 4em;
-  }
-
-  .project-container img {
-    margin-left: 2em;
   }
 
   .about {
@@ -592,16 +513,13 @@ section {
     flex-direction: row;
     justify-content: center;
 
-    .about-display-pic {
+    .about-left {
       width: 100%;
     }
 
-    .about-details {
+    .about-right {
       width: 100%;
       padding-top: 4em;
-      // margin-left: 50px;
-      // width: 60%;
-      // align-self: center;
     }
   }
 }
@@ -612,23 +530,23 @@ section {
     // display: grid;
   }
 
-  .name-pic {
-    display: flex;
-    // background: red;
-    // position: relative;
-    justify-content: flex-start;
-    h1 {
-      // margin-right: 1em;
-    }
-    img {
-      // background: pink;
-      // position: absolute;
-      // padding: 0;
-      // top: 0;
-      // left: 375px;
-      padding-left: 0;
-    }
-  }
+  // .name-pic {
+  //   display: flex;
+  //   // background: red;
+  //   // position: relative;
+  //   justify-content: flex-start;
+  //   h1 {
+  //     // margin-right: 1em;
+  //   }
+  //   img {
+  //     // background: pink;
+  //     // position: absolute;
+  //     // padding: 0;
+  //     // top: 0;
+  //     // left: 375px;
+  //     padding-left: 0;
+  //   }
+  // }
 
   .nav-container {
     display: grid;
@@ -639,8 +557,8 @@ section {
     // to achieve the split color navbar look
     header {
       // background: red;
-      // background: #272727;
-      background: $backgroundColour;
+      background: #272727;
+      // background: red;
     }
   }
 
