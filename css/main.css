@@ -563,25 +563,12 @@ section {
     display: grid;
     -ms-grid-columns: 66% auto;
         grid-template-columns: 66% auto;
-    background: unset;
-  }
-  .nav-container header {
-    background: #272727;
   }
   header {
     padding: 2em 2em 2em 4em;
   }
   .social-header {
-    padding: 2em 2em 2em 0em;
-  }
-  section {
-    padding: 4em;
-  }
-  section.skills {
-    padding-left: 12em;
-    padding-right: 12em;
-  }
-  .social-header {
+    padding: 2em 2em 2em 4.5em;
     display: block;
   }
   .social-header ul {
@@ -591,14 +578,16 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 7em;
-    float: right;
+    width: 8em;
   }
   .social-header ul a {
     color: #000;
   }
   .social-header ul a:hover {
-    color: purple;
+    color: #ffe400;
+  }
+  section {
+    padding: 3em 4em;
   }
   .hero {
     display: -ms-grid;
@@ -612,16 +601,12 @@ section {
     background: #272727;
     padding: 6em 8em 6em 4em;
   }
-  .meet {
-    color: royalblue;
-  }
-  .hero-design {
-    display: unset;
+  .hero .hero-design {
+    display: block;
     margin-left: -50%;
     width: 100%;
   }
   .projects img {
-    float: right;
     max-width: 500px;
   }
 }

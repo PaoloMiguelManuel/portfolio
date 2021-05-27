@@ -551,113 +551,64 @@ section {
   .nav-container {
     display: grid;
     grid-template-columns: 66% auto;
-    // unsetting here to add white portion to right side for social media links
-    background: unset;
-
-    // to achieve the split color navbar look
-    header {
-      // background: red;
-      background: #272727;
-      // background: red;
-    }
   }
 
   header {
     padding: 2em 2em 2em 4em;
   }
 
-  .social-header {
-    padding: 2em 2em 2em 0em;
-    // color: red;
-  }
-
-  section {
-    padding: 4em;
-  }
-
-  section.skills {
-    // padding: em;
-    // padding: 1em 8em;
-    padding-left: 12em;
-    padding-right: 12em;
-    // padding-bottom: 0;
-  }
 
   .social-header {
+    padding: 2em 2em 2em 4.5em;
     display: block;
 
     ul {
       display: flex;
       justify-content: space-between;
-      width: 7em;
-      float: right;
+      width: 8em;
 
       a {
         color: #000;
-      }
 
-      a:hover {
-        color: purple;
+        &:hover {
+          color: $primaryColour;
+        }
       }
     }
   }
 
+  section {
+    padding: 3em 4em;
+  
+  }
+
+
+
   .hero {
     display: grid;
     grid-template-columns: 66% auto;
+    // remove background set from previous css to achieve split look
     background: unset;
     padding: 0;
 
     .content {
       background: $backgroundColour;
       padding: 6em 8em 6em 4em;
-      // text-align: left;
+    }
 
-      h1 {
-        // font-size: 2.5em;
-        // line-height: 1.2em;
-        // text-transform: uppercase;
-      }
-      // h2 {
-      //   color: #ffffff;
-      // }
+    .hero-design {
+      display: block;
+      margin-left: -50%;
+      width: 100%;
     }
   }
 
-  // .avatar-pic {
-  //   position: relative;
-
-  //   img {
-  //     position: absolute;
-  //     // top: -50px;
-  //     // left: 300px;
-  //     left: 450px;
-  //     // left: 100px;
-  //     bottom: 10px;
-  //     width: 200px;
-  //     // max-width: 50%;
-  //   }
-  // }
-
-  .meet {
-    //   margin: unset;
-    color: royalblue;
+  .projects {
+    img {
+      max-width: 500px;
+    }
   }
 
-  .hero-design {
-    display: unset;
-    margin-left: -50%;
-    // margin-top: 12%;
-    width: 100%;
-    // max-height: 35%;
-    // height: 35%;
-    // margin-bottom: 0%;
-  }
-
-  .projects img {
-    float: right;
-    max-width: 500px;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
