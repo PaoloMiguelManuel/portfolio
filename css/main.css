@@ -12,8 +12,8 @@ body {
 }
 
 .background {
-  background: -webkit-gradient(linear, left top, right bottom, from(#e5e8e8), color-stop(#d9dcdc), color-stop(#ced1d1), color-stop(#c2c5c5), to(#b7baba));
-  background: linear-gradient(to right bottom, #e5e8e8, #d9dcdc, #ced1d1, #c2c5c5, #b7baba);
+  background-image: -webkit-gradient(linear, left top, right top, from(#e5e8e8), color-stop(#cdd0d0), color-stop(#b6b8b8), color-stop(#9fa1a1), to(#898b8b));
+  background-image: linear-gradient(to right, #e5e8e8, #cdd0d0, #b6b8b8, #9fa1a1, #898b8b);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -42,7 +42,7 @@ a {
 
 .nav-container a {
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .nav-container a:hover {
@@ -56,8 +56,8 @@ a {
   color: #ffe400;
 }
 
-.nav-container i {
-  font-size: 1.5em;
+.nav-container .social-header a {
+  font-size: 1.5rem;
 }
 
 header {
@@ -145,8 +145,8 @@ header ul a {
 
 .contact-btn {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
-  border-radius: 11px;
+  padding: 0.75em 1.25em;
+  border-radius: 0.8em;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -161,7 +161,6 @@ header ul a {
   width: 100%;
   height: 100%;
   background-color: #14a76c;
-  border-radius: 11px;
   z-index: -2;
 }
 
@@ -175,12 +174,11 @@ header ul a {
   background-color: #ffe400;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 11px;
   z-index: -1;
 }
 
 .contact-btn:hover {
-  color: #272727;
+  color: #000;
 }
 
 .contact-btn:hover:before {
@@ -205,7 +203,7 @@ section {
 .projects-heading-container .projects-heading {
   font-family: "Permanent Marker", cursive;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   margin: 0;
@@ -227,14 +225,12 @@ section {
 }
 
 .project-title {
-  letter-spacing: 0.2rem;
   color: #272727;
+  font-size: 1.3rem;
   font-weight: bold;
-  font-size: 1.3em;
+  letter-spacing: 0.13em;
   margin-bottom: 0.5em;
-  display: block;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .tech-stack {
@@ -242,9 +238,8 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2em;
-  font-size: 0.85em;
+  font-size: 0.85rem;
   margin-bottom: 0.5em;
-  text-align: center;
 }
 
 .description {
@@ -266,34 +261,34 @@ section {
 }
 
 .code-site-containers .github-btn {
-  border: 2px solid #2f4454;
   color: #ffffff;
   background-color: #2f4454;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.3em;
   margin-right: 1em;
 }
 
 .code-site-containers .github-btn:hover {
   color: #2f4454;
   background-color: #fff;
+  border: 2px solid #2f4454;
 }
 
 .code-site-containers .live-btn {
-  width: 100%;
-  border-radius: 1rem;
-  border: 2px solid #376e6f;
   color: #ffffff;
   background-color: #376e6f;
+  width: 100%;
+  border-radius: 0.3em;
 }
 
 .code-site-containers .live-btn:hover {
   color: #376e6f;
   background-color: #fff;
+  border: 2px solid #376e6f;
 }
 
-.project-container a img {
-  border-radius: 1em;
+.project-container img {
+  border-radius: 0.5em;
 }
 
 .site-screenshot {
@@ -313,8 +308,8 @@ section {
 .skills-heading-container .skills-heading {
   font-family: "Permanent Marker", cursive;
   color: #ffe400;
+  font-size: 2.5rem;
   font-weight: 900;
-  font-size: 2.5em;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   margin: 0;
@@ -335,8 +330,8 @@ section {
 
 .skills-container ul li {
   background-color: #ffffff;
-  padding: 2em;
   border-radius: 0.5em;
+  padding: 2em;
   margin-bottom: 1em;
 }
 
@@ -345,38 +340,27 @@ section {
   display: grid;
   place-content: center;
   height: 50px;
-  font-size: 3.5em;
+  font-size: 3rem;
   margin: 0 auto;
 }
 
-.skills-container ul li .primary-desc .icon-container.one {
-  color: #14a76c;
-}
-
-.skills-container ul li .primary-desc .icon-container.two {
-  color: #14a76c;
-}
-
-.skills-container ul li .primary-desc .icon-container.three {
-  color: #14a76c;
-}
-
 .skills-container ul li .primary-desc .skill-title {
+  color: #14a76c;
   font-weight: bold;
   font-size: 1.2rem;
-  padding: 0.8rem 0;
-  letter-spacing: 0.1rem;
+  padding: 0.8em 0;
+  letter-spacing: 0.1em;
 }
 
 .skills-container ul li .primary-desc .description {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4em;
 }
 
 .skills-container ul li .secondary-desc h3 {
   color: #14a76c;
   font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  padding-bottom: 0.8rem;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.8em;
 }
 
 .skills-container ul li .secondary-desc ul {
@@ -387,7 +371,7 @@ section {
 
 .skills-container ul li .secondary-desc ul li {
   font-size: 0.9rem;
-  padding: 0 5% 15px 5%;
+  padding: 0 10px 10px;
   margin: 0;
 }
 
@@ -404,7 +388,7 @@ section {
 .about-heading-container .about-heading {
   font-family: "Permanent Marker", cursive;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   letter-spacing: 0.17em;
   text-transform: uppercase;
   margin: 0;
@@ -427,31 +411,31 @@ section {
           flex-direction: column;
 }
 
-.about .about-display {
-  margin-bottom: 2.5em;
+.about .about-display-pic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 2.5em;
 }
 
-.about .about-display .about-img {
-  width: 100%;
-  height: auto;
-  border-radius: 2em;
-}
-
-.about .about-display .about-image-container {
+.about .about-display-pic .about-image-container {
   position: relative;
-  width: 100%;
-  max-width: 400px;
+  width: 70%;
+  max-width: 250px;
   height: auto;
 }
 
-.about .about-display .about-image-container:after {
-  border-radius: 2em;
+.about .about-display-pic .about-image-container .about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
+}
+
+.about .about-display-pic .about-image-container::after {
+  border-radius: 1em;
   content: "";
   position: absolute;
   top: 0.9em;
@@ -464,33 +448,28 @@ section {
 }
 
 .about .about-details .about-greeting {
-  letter-spacing: 0.2rem;
   color: #272727;
   font-weight: bold;
   font-size: 1.3rem;
-  display: block;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .about .about-details .about-name {
   color: #2e9cca;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   font-size: 0.9rem;
   margin: 0.5em 0;
-  text-align: center;
 }
 
 .about .about-details .about-description {
-  font-size: 0.9em;
-  text-align: center;
+  font-size: 0.9rem;
 }
 
 .footer {
   height: 10vh;
-  text-align: center;
   padding: 0;
   margin: 0;
 }
@@ -499,29 +478,27 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
   background-color: #272727;
 }
 
-.footer p {
+.footer div p {
   color: #ffe400;
   font-size: 1.2rem;
 }
 
-.footer p a {
+.footer div p a {
   color: #ffffff;
   padding: 0 10px;
 }
 
-.footer p a:hover {
+.footer div p a:hover {
   color: #ffe400;
 }
 
@@ -584,12 +561,12 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .about .about-display-pic {
+    width: 100%;
+  }
   .about .about-details {
-    margin-left: 50px;
-    width: 60%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    width: 100%;
+    padding-top: 4em;
   }
 }
 

@@ -18,7 +18,14 @@ body {
 }
 
 .background {
-  background: linear-gradient(to right bottom, #e5e8e8, #d9dcdc, #ced1d1, #c2c5c5, #b7baba);  
+  background-image: linear-gradient(
+    to right,
+    #e5e8e8,
+    #cdd0d0,
+    #b6b8b8,
+    #9fa1a1,
+    #898b8b
+  );
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -44,7 +51,7 @@ a {
 .nav-container {
   a {
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
 
     &:hover {
       color: $primaryColour;
@@ -58,8 +65,10 @@ a {
     color: $primaryColour;
   }
 
-  i {
-    font-size: 1.5em;
+  .social-header {
+    a {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -137,8 +146,8 @@ header {
 
 .contact-btn {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
-  border-radius: 11px;
+  padding: 0.75em 1.25em;
+  border-radius: 0.8em;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -152,7 +161,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: $tertiaryColour;
-    border-radius: 11px;
+    // border-radius: 11px;
     z-index: -2;
   }
 
@@ -165,12 +174,12 @@ header {
     height: 100%;
     background-color: $primaryColour;
     transition: all 0.3s;
-    border-radius: 11px;
+    // border-radius: 11px;
     z-index: -1;
   }
 
   &:hover {
-    color: $backgroundColour;
+    color: #000;
 
     &:before {
       width: 100%;
@@ -187,15 +196,11 @@ section {
   display: flex;
   justify-content: center;
   padding-top: 3em;
-  .projects-heading {
-    // font-style: italic;
-    // text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
 
-    // color: $secondaryColour;
+  .projects-heading {
     font-family: "Permanent Marker", cursive;
-    // color: red;
     font-weight: 900;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     letter-spacing: 0.17em;
     text-transform: uppercase;
     margin: 0;
@@ -210,7 +215,6 @@ section {
 }
 
 .project-container {
-  // background-color: red;
   margin-bottom: 3em;
 }
 
@@ -219,17 +223,12 @@ section {
 }
 
 .project-title {
-  letter-spacing: 0.2rem;
   color: $backgroundColour;
+  font-size: 1.3rem;
   font-weight: bold;
-  font-size: 1.3em;
-  // margin-top: -0.4em;
+  letter-spacing: 0.13em;
   margin-bottom: 0.5em;
-  display: block;
   text-transform: uppercase;
-  text-align: center;
-
-  // text-shadow: 2px 3px 15px rgba(0,0,0,0.5);
 }
 
 .tech-stack {
@@ -237,10 +236,8 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.2em;
-  font-size: 0.85em;
+  font-size: 0.85rem;
   margin-bottom: 0.5em;
-  text-align: center;
-  // text-shadow: 2px 3px 20px rgba(0,0,0,0.5);
 }
 
 .description {
@@ -257,70 +254,50 @@ section {
   text-align: center;
 
   .github-btn {
-    // box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
-
-    border: 2px solid $githubBtnColour;
     color: #ffffff;
     background-color: $githubBtnColour;
-    // width: 200px;
     width: 100%;
-    border-radius: 1rem;
-    // background-color: $githubBtnColour;
+    border-radius: 0.3em;
     margin-right: 1em;
+
     &:hover {
-      // background-color: rgb(39, 96, 240);
       color: $githubBtnColour;
       background-color: #fff;
+      border: 2px solid $githubBtnColour;
     }
   }
   .live-btn {
-    // box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
-
-    // color: #fff;
-    // width:
-    width: 100%;
-    border-radius: 1rem;
-    // background-color: $liveBtnColour;
-
-    // background-color: #6c3da8;
-
-    border: 2px solid $liveBtnColour;
     color: #ffffff;
     background-color: $liveBtnColour;
+    width: 100%;
+    border-radius: 0.3em;
+
     &:hover {
-      // background-color: #8860bd;
       color: $liveBtnColour;
       background-color: #fff;
+      border: 2px solid $liveBtnColour;
     }
   }
 }
 
-.project-container a img {
-  border-radius: 1em;
-  // box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
-
-  // margin-bottom: 4em;
+.project-container img {
+  border-radius: 0.5em;
 }
 
 .site-screenshot {
   width: 100%;
 }
 
-// skills section
 .skills-heading-container {
   display: flex;
   justify-content: center;
-  // background-color: $backgroundColour;
-  // padding-top: 3em;
   padding-bottom: 3em;
-  .skills-heading {
-    // font-style: italic;
 
+  .skills-heading {
     font-family: "Permanent Marker", cursive;
     color: $primaryColour;
+    font-size: 2.5rem;
     font-weight: 900;
-
-    font-size: 2.5em;
     letter-spacing: 0.17em;
     text-transform: uppercase;
     margin: 0;
@@ -337,20 +314,13 @@ section {
 
 .skills {
   background-color: $backgroundColour;
-  // height: 100vh;
   padding-top: 3em;
-
-
 }
 
 .skills-container ul li {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-
   background-color: #ffffff;
-  padding: 2em;
   border-radius: 0.5em;
+  padding: 2em;
   margin-bottom: 1em;
 
   .primary-desc {
@@ -358,31 +328,20 @@ section {
       display: grid;
       place-content: center;
       height: 50px;
-      font-size: 3.5em;
+      font-size: 3rem;
       margin: 0 auto;
-
-      &.one {
-        color: $tertiaryColour;
-      }
-      &.two {
-        color: $tertiaryColour;
-        // color: $secondaryColour;
-      }
-      &.three {
-        color: $tertiaryColour;
-        // color: $tertiaryColour;
-      }
     }
 
     .skill-title {
+      color: $tertiaryColour;
       font-weight: bold;
       font-size: 1.2rem;
-      padding: 0.8rem 0;
-      letter-spacing: 0.1rem;
+      padding: 0.8em 0;
+      letter-spacing: 0.1em;
     }
 
     .description {
-      margin-bottom: 3.5rem;
+      margin-bottom: 4em;
     }
   }
 
@@ -390,37 +349,33 @@ section {
     h3 {
       color: $tertiaryColour;
       font-size: 1.2rem;
-      letter-spacing: 0.1rem;
-      padding-bottom: 0.8rem;
+      letter-spacing: 0.1em;
+      padding-bottom: 0.8em;
     }
+
     ul {
       list-style-type: disc;
       text-align: left;
       list-style-position: inside;
-      // line-height: 0.8rem;
+
       li {
         font-size: 0.9rem;
-        padding: 0 5% 15px 5%;
-        // padding-top: 0;
+        padding: 0 10px 10px;
         margin: 0;
       }
     }
   }
 }
 
-// about section
 .about-heading-container {
   display: flex;
   justify-content: center;
   padding-top: 3em;
-  .about-heading {
-    // font-style: italic;
-    // border-bottom: 1px solid $primaryColour;
-    // text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
 
+  .about-heading {
     font-family: "Permanent Marker", cursive;
     font-weight: 900;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     letter-spacing: 0.17em;
     text-transform: uppercase;
     margin: 0;
@@ -435,32 +390,31 @@ section {
 }
 
 .about {
-  // background: yellow;
   display: flex;
   flex-direction: column;
 
-  .about-display {
-    // background: red;
-    margin-bottom: 2.5em;
-    // background-color: blue;
+  // working
+  .about-display-pic {
     display: flex;
     justify-content: center;
+    margin-bottom: 2.5em;
 
-    .about-img {
-      width: 100%;
-      height: auto;
-      border-radius: 2em;
-    }
-
+    
     .about-image-container {
       position: relative;
-      width: 100%;
-      max-width: 400px;
+      width: 70%;
+      max-width: 250px;
       height: auto;
+
+      .about-img {
+        width: 100%;
+        height: auto;
+        border-radius: 1em;
+      }
     }
 
-    .about-image-container:after {
-      border-radius: 2em;
+    .about-image-container::after {
+      border-radius: 1em;
       content: "";
       position: absolute;
       top: 0.9em;
@@ -472,114 +426,96 @@ section {
     }
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .about-details {
-    // background: blue;
+    // width: 100%;
     .about-greeting {
-      letter-spacing: 0.2rem;
       color: $backgroundColour;
       font-weight: bold;
       font-size: 1.3rem;
-      // margin-bottom: 0.5em;
-      display: block;
+      letter-spacing: 0.3em;
       text-transform: uppercase;
-      text-align: center;
     }
 
     .about-name {
       color: $secondaryColour;
       text-transform: uppercase;
       font-weight: bold;
-      letter-spacing: 0.1em;
+      letter-spacing: 1px;
       font-size: 0.9rem;
       margin: 0.5em 0;
-      text-align: center;
     }
 
     .about-description {
-      font-size: 0.9em;
-      text-align: center;
+      font-size: 0.9rem;
     }
   }
-
-  // #minute {
-  //   animation: move-clock-hands 1s linear infinite;
-  //   transform-origin: left;
-  //   transform-box: fill-box;
-  // }
-
-  // #hour {
-  //   animation: move-clock-hands 12s linear infinite;
-  //   transform-origin: left;
-  //   transform-box: fill-box;
-  // }
-
-  // #body,
-  // #head-neck {
-  //   animation: move-body 4s infinite;
-  //   transform-origin: 50% 100% 0;
-  // }
-
-  // @keyframes move-clock-hands {
-  //   from {
-  //     transform: rotateZ(0deg);
-  //   }
-  //   to {
-  //     transform: rotateZ(360deg);
-  //   }
-  // }
-
-  // @keyframes move-body {
-  //   0%,
-  //   100% {
-  //     transform: rotate(-5deg);
-  //   }
-  //   50% {
-  //     transform: rotate(5deg);
-  //   }
-  // }
 }
 
-// .about {
-//   position: relative;
-//   // margin-top: 1em;
-//   // background-color: red;
-
-//   img {
-//     border-radius: 1em;
-//   }
-// }
-
-// footer section
 .footer {
-  div {
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: column;
-    background-color: $backgroundColour;
-  }
   height: 10vh;
-  text-align: center;
   padding: 0;
   margin: 0;
 
-  p {
-    color: $primaryColour;
-    font-size: 1.2rem;
-    a {
-      color: #ffffff;
-      padding: 0 10px;
-      // margin: 0 15px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    background-color: $backgroundColour;
 
-      &:hover {
-        color: $primaryColour;
+    p {
+      color: $primaryColour;
+      font-size: 1.2rem;
+
+      a {
+        color: #ffffff;
+        padding: 0 10px;
+
+        &:hover {
+          color: $primaryColour;
+        }
       }
     }
   }
 }
 
-// media queries
+// ------------------------------------------------------------------------------------------------------
+// media queries ----------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 768px) {
   // .name-pic {
   //   img {
@@ -655,10 +591,17 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    .about-display-pic {
+      width: 100%;
+    }
+
     .about-details {
-      margin-left: 50px;
-      width: 60%;
-      align-self: center;
+      width: 100%;
+      padding-top: 4em;
+      // margin-left: 50px;
+      // width: 60%;
+      // align-self: center;
     }
   }
 }
