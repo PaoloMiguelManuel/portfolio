@@ -240,6 +240,7 @@ section {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 0.5em;
+  gap: 0.5em;
 
   .github-btn {
     color: #ffffff;
@@ -247,7 +248,7 @@ section {
     background-color: $githubBtnColour;
     border: 2px solid $githubBtnColour;
     border-radius: 0.5em;
-    margin: 0 0.5em;
+    // margin: 0 0.5em;
 
     &:hover {
       color: $githubBtnColour;
@@ -261,7 +262,7 @@ section {
     background-color: $liveBtnColour;
     border: 2px solid $liveBtnColour;
     border-radius: 0.5em;
-    margin: 0 0.5em;
+    // margin: 0 0.5em;
 
     &:hover {
       color: $liveBtnColour;
@@ -488,7 +489,7 @@ section {
 
       .site-screenshot-url {
         align-self: center;
-        margin-left: 1em;
+        margin-left: 2.5em;
       }
     }
   }
@@ -630,6 +631,12 @@ section {
 
   section {
     padding: 4em 8em 4em 8em;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
