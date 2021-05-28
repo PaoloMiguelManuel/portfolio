@@ -283,6 +283,11 @@ section {
   border-radius: 1em;
 }
 
+.project-container img:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
 .site-screenshot {
   width: 100%;
 }

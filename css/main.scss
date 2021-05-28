@@ -273,6 +273,11 @@ section {
 
 .project-container img {
   border-radius: 1em;
+
+  &:hover {
+    filter: brightness(125%);
+
+  }
 }
 
 .site-screenshot {
