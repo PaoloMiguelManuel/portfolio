@@ -505,6 +505,7 @@ section {
 }
 
 @media only screen and (min-width: 768px) {
+ 
   header {
     padding-left: 5em;
   }
@@ -521,9 +522,18 @@ section {
         text-align: left;
       }
 
+      .project-info {
+        // background-color: orangered;
+      }
+
       .site-screenshot-url {
+        // display: block;
+        // text-align: left;
+        // width: auto;
+        // background: purple;
         align-self: center;
         margin-left: 2.5em;
+        // justify-self: start;
       }
     }
   }
@@ -739,6 +749,23 @@ section {
   .hero .content {
     padding: 9em 10em;
   }
+
+
+
+
+  .projects {
+    .project-container {
+      grid-template-columns: 40% 40%;
+      justify-content: center;
+      .site-screenshot-url {
+        margin-left: 0;
+      }
+    }
+  }
+
+
+
+
 
   .about {
     // display: flex;

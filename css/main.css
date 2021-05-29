@@ -707,6 +707,16 @@ section {
   .hero .content {
     padding: 9em 10em;
   }
+  .projects .project-container {
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .project-container .site-screenshot-url {
+    margin-left: 0;
+  }
   .about {
     gap: 0;
   }
