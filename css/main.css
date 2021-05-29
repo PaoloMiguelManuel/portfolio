@@ -627,15 +627,20 @@ section {
     padding: 2em 2em 2em 4em;
   }
   .social-header {
-    padding: 2em 3.5em;
+    font-size: 1.5rem;
+    padding: 2em 0 2em 2em;
     display: unset;
   }
   .social-header ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social-header ul li {
+    padding-right: 2.5em;
   }
   .social-header ul a {
     color: #000;
@@ -709,8 +714,8 @@ section {
   .nav-container header {
     padding-left: 14.5em;
   }
-  .nav-container .social-header {
-    padding: 2em 6em;
+  .nav-container .social-header ul li {
+    padding-right: 5em;
   }
   .hero .content {
     padding: 9em 10em;

@@ -595,13 +595,16 @@ section {
   }
 
   .social-header {
-    // font-size: 2rem;
-    padding: 2em 3.5em;
+    font-size: 1.5rem;
+    padding: 2em 0 2em 2em;
     display: unset;
 
     ul {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      li {
+        padding-right: 2.5em;
+      }
       // width: 8em;
 
       a {
@@ -679,7 +682,11 @@ section {
       padding-left: 8em;
     }
 
-    // .social-header {
+    .social-header {
+      // font-size: 5rem;
+    
+    }
+
     //   padding-left: 7em;
     //   li {
     //     padding-right: ;
@@ -718,7 +725,12 @@ section {
 
     .social-header {
       // padding: 2em 0 2em 6em;
-      padding: 2em 6em;
+      // padding: 2em 6em;
+      ul {
+        li {
+          padding-right: 5em;
+        }
+      }
     }
   }
 
