@@ -595,15 +595,16 @@ section {
   }
 
   .social-header {
-    font-size: 1.5rem;
-    padding: 2em 0 2em 2em;
+    // padding: 2em 0 2em 2em;
     display: unset;
-
+    padding: 2em 2em 2em 5em;
+    
     ul {
       display: flex;
-      justify-content: center;
+      // justify-content: end;
       li {
-        padding-right: 2.5em;
+        font-size: 1.5rem;
+        padding-right: 2em;
       }
       // width: 8em;
 
@@ -683,6 +684,7 @@ section {
     }
 
     .social-header {
+
       // font-size: 5rem;
     
     }
@@ -723,15 +725,15 @@ section {
       padding-left: 14.5em;
     }
 
-    .social-header {
-      // padding: 2em 0 2em 6em;
-      // padding: 2em 6em;
-      ul {
-        li {
-          padding-right: 5em;
-        }
-      }
-    }
+    // .social-header {
+    //   // padding: 2em 0 2em 6em;
+    //   // padding: 2em 6em;
+    //   ul {
+    //     li {
+    //       padding-right: 3em;
+    //     }
+    //   }
+    // }
   }
 
   .hero .content {
