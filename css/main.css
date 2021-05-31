@@ -346,6 +346,10 @@ section {
 }
 
 .skills-container ul li {
+  height: auto;
+}
+
+.skills-container ul li {
   background-color: #ffffff;
   border-radius: 0.5em;
   padding: 2em;
@@ -356,8 +360,14 @@ section {
   display: -ms-grid;
   display: grid;
   place-content: center;
-  height: 50px;
+  height: 5em;
   font-size: 3rem;
+}
+
+.skills-container ul li .primary-desc .icon-container img {
+  width: 100%;
+  height: auto;
+  max-height: 5em;
 }
 
 .skills-container ul li .primary-desc .skill-title {
@@ -635,7 +645,7 @@ section {
     display: block;
     margin-left: -40%;
     margin-top: 30%;
-    width: 80%;
+    width: 85%;
   }
   .projects-heading-container {
     padding-top: 4em;
@@ -661,10 +671,11 @@ section {
   }
   .skills-container ul li {
     margin: 0;
-    padding-bottom: 9em;
+    padding-bottom: 8em;
   }
   .skills-container ul li .primary-desc {
-    height: 75%;
+    padding-bottom: 5em;
+    height: 80%;
   }
   .skills-container ul li .primary-desc .description {
     margin-bottom: 0;

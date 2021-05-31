@@ -330,6 +330,12 @@ section {
 }
 
 .skills-container ul li {
+  // overflow: auto;
+  // here
+  height: auto;
+}
+
+.skills-container ul li {
   background-color: #ffffff;
   border-radius: 0.5em;
   padding: 2em;
@@ -339,8 +345,30 @@ section {
     .icon-container {
       display: grid;
       place-content: center;
-      height: 50px;
+      height: 5em;
       font-size: 3rem;
+
+
+      // &.one {
+        // background-color: red;
+        // background-color: red;
+        // background-color: red;
+        // text-align: center;
+        // height: 500px;
+        // margin-top: 200px;
+        // margin-bottom: 200px;
+        // background-color: red;
+        
+        img {
+          // width: 250px;
+          // height: 100%;
+          // display: block;
+          // margin: 0 auto;
+          width: 100%;
+          height: auto;
+          max-height: 5em;
+        }
+      // }
     }
 
     .skill-title {
@@ -661,7 +689,7 @@ section {
       display: block;
       margin-left: -40%;
       margin-top: 30%;
-      width: 80%;
+      width: 85%;
     }
   }
 
@@ -694,12 +722,13 @@ section {
 
     li {
       margin: 0;
-      padding-bottom: 9em;
+      padding-bottom: 8em;
 
       .primary-desc {
         // background: yellow;
         // background: 50%;
-        height: 75%;
+        padding-bottom: 5em;
+        height: 80%;
         .description {
           margin-bottom: 0;
         }
