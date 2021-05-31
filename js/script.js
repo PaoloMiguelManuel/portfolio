@@ -5,9 +5,9 @@ tl.from('.content', {
    y: '-30%',
    opactity: '0',
    duration: 2,
-   // ease: Power4.easeOut
+   // ease: Power1.easeOut
 })
-tl.from('.stagger1', {
+tl.from('.delay-animation', {
    opacity: 0,
    y: -50,
    stagger: .3,
@@ -19,11 +19,20 @@ tl.from('.hero-design', {
    duration: 1
 }, "-=2")
 
-gsap.from('.circ-anim', {
+gsap.from('.circle-animation', {
+   opacity: 0,
    stagger: 0.2,
    scale: 0.1,
-   duration: 1
+   duration: 2
 })
+
+gsap.from(".feather-animation", {
+   opacity: 0, 
+   stagger: 0.2,
+   scale: 0.1,
+   y: 100, 
+   duration: 2
+ })
 
 gsap.from('.scroll-transition', {
    scrollTrigger: {
