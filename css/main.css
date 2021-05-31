@@ -633,8 +633,9 @@ section {
   }
   .hero .hero-design {
     display: block;
-    margin-left: -50%;
-    width: 100%;
+    margin-left: -40%;
+    margin-top: 30%;
+    width: 80%;
   }
   .projects-heading-container {
     padding-top: 4em;
