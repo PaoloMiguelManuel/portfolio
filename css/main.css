@@ -360,14 +360,14 @@ section {
   display: -ms-grid;
   display: grid;
   place-content: center;
-  height: 5em;
+  height: 4em;
   font-size: 3rem;
 }
 
 .skills-container ul li .primary-desc .icon-container img {
   width: 100%;
   height: auto;
-  max-height: 5em;
+  max-height: 4em;
 }
 
 .skills-container ul li .primary-desc .skill-title {
