@@ -137,20 +137,19 @@ header ul a {
 }
 
 .contact-btn {
-  color: #ffffff;
+  font-size: 1.1rem;
+  color: #000;
   width: 200px;
   display: block;
   margin: 0 auto;
   padding: 1em;
   background-color: #ffe400;
-  border: 2px solid #ffe400;
   border-radius: 0.5em;
 }
 
 .contact-btn:hover {
-  color: #ffe400;
-  background-color: #fff;
-  border: 2px solid #ffe400;
+  color: #fff;
+  background-color: #f0e158;
 }
 
 section {
@@ -241,7 +240,6 @@ section {
           justify-content: center;
   width: 100%;
   font-size: 1.8rem;
-  text-align: center;
   margin-bottom: 0.5em;
   gap: 0.5em;
 }
@@ -251,14 +249,14 @@ section {
   width: 100%;
   max-width: 200px;
   background-color: #2f4454;
-  border: 2px solid #2f4454;
   border-radius: 0.5em;
+  padding: 0;
 }
 
 .project-container .project-info .code-site-containers .github-btn:hover {
-  color: #2f4454;
-  background-color: #fff;
-  border: 2px solid #2f4454;
+  background-color: #4b6579;
+  -webkit-box-shadow: 0 0 10px rgba(33, 33, 33, 0.5);
+          box-shadow: 0 0 10px rgba(33, 33, 33, 0.5);
 }
 
 .project-container .project-info .code-site-containers .live-btn {
@@ -266,14 +264,13 @@ section {
   width: 100%;
   max-width: 200px;
   background-color: #376e6f;
-  border: 2px solid #376e6f;
   border-radius: 0.5em;
 }
 
 .project-container .project-info .code-site-containers .live-btn:hover {
-  color: #376e6f;
-  background-color: #fff;
-  border: 2px solid #376e6f;
+  background-color: #4b8283;
+  -webkit-box-shadow: 0 0 10px rgba(33, 33, 33, 0.5);
+          box-shadow: 0 0 10px rgba(33, 33, 33, 0.5);
 }
 
 .project-container img {
@@ -540,6 +537,7 @@ section {
   margin-bottom: 1em;
   padding: 1em;
   border-radius: 0.5em;
+  border: none;
 }
 
 .footer form textarea {
@@ -553,14 +551,11 @@ section {
   width: 50%;
   height: 3.5em;
   background-color: #14a76c;
-  border: 2px solid #14a76c;
   border-radius: 0.5em;
 }
 
 .footer form .contact-form-btn:hover {
-  color: #14a76c;
-  background-color: #fff;
-  border: 2px solid #14a76c;
+  background-color: #20d38b;
 }
 
 .footer .contact-socials-container {

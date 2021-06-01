@@ -176,20 +176,24 @@ header {
   //     width: 100%;
   //   }
   // }
-    color: #ffffff;
+  font-size: 1.1rem;
+  // font-weight: bold;
+    color: #000;
     width: 200px;
     display: block;
     // max-width: 200px;
     margin: 0 auto;
     padding: 1em;
     background-color: $primaryColour;
-    border: 2px solid $primaryColour;
+    // border: 2px solid $primaryColour;
     border-radius: 0.5em;
 
     &:hover {
-      color: $primaryColour;
-      background-color: #fff;
-      border: 2px solid $primaryColour;
+      // color: $primaryColour;
+      color: #fff;
+      // background-color: #F7FF00;
+      background-color: #f0e158;
+      // border: 2px solid $primaryColour;
     }
   
 }
@@ -269,7 +273,7 @@ section {
       justify-content: center;
       width: 100%;
       font-size: 1.8rem;
-      text-align: center;
+      // text-align: center;
       margin-bottom: 0.5em;
       gap: 0.5em;
 
@@ -278,13 +282,15 @@ section {
         width: 100%;
         max-width: 200px;
         background-color: $githubBtnColour;
-        border: 2px solid $githubBtnColour;
+        // border: 2px solid $githubBtnColour;
         border-radius: 0.5em;
+        // padding: 2px;
+        // border: none;
+        padding: 0;
 
         &:hover {
-          color: $githubBtnColour;
-          background-color: #fff;
-          border: 2px solid $githubBtnColour;
+          background-color: #4b6579;;
+          box-shadow: 0 0 10px rgba(33,33,33,.5); 
         }
       }
       .live-btn {
@@ -292,13 +298,12 @@ section {
         width: 100%;
         max-width: 200px;
         background-color: $liveBtnColour;
-        border: 2px solid $liveBtnColour;
+        // border: 2px solid $liveBtnColour;
         border-radius: 0.5em;
 
         &:hover {
-          color: $liveBtnColour;
-          background-color: #fff;
-          border: 2px solid $liveBtnColour;
+          background-color: #4b8283;;
+          box-shadow: 0 0 10px rgba(33,33,33,.5); 
         }
       }
     }
@@ -606,6 +611,8 @@ section {
       margin-bottom: 1em;
       padding: 1em;
       border-radius: 0.5em;
+      border: none;
+
     }
     
     textarea {
@@ -622,13 +629,14 @@ section {
       height: 3.5em;
       // max-width: 200px;
       background-color: $tertiaryColour;
-      border: 2px solid $tertiaryColour;
+      // border: 2px solid $tertiaryColour;
+      // border: none;
       border-radius: 0.5em;
 
       &:hover {
-        color: $tertiaryColour;
-        background-color: #fff;
-        border: 2px solid $tertiaryColour;
+        // color: $tertiaryColour;
+        background-color: #20d38b;
+        // border: 2px solid $tertiaryColour;
       }
     }
   }
