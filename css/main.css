@@ -512,6 +512,8 @@ section {
   height: auto;
   background: #272727;
   padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .footer2 .contact-heading-container {
@@ -597,6 +599,7 @@ section {
 }
 
 .footer2 .contact-socials-container {
+  background-color: #1d1b1b;
   font-size: 1.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -604,7 +607,8 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2.5em;
+  margin-top: 2.5em;
+  padding: 1em;
   gap: 1.5em;
 }
 
