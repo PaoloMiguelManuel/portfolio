@@ -512,8 +512,8 @@ section {
   height: auto;
   background: #272727;
   padding-bottom: 0;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 0em;
+  padding-left: 0em;
 }
 
 .footer2 .contact-heading-container {
@@ -561,6 +561,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 2em;
 }
 
 .footer2 form label {
