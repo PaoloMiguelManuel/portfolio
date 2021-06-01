@@ -537,6 +537,7 @@ section {
 .footer2 {
   height: auto;
   background: $backgroundColour;
+  padding-bottom: 0;
 
   .contact-heading-container {
     display: flex;
@@ -622,6 +623,7 @@ section {
     display: flex;
     justify-content: center;
     padding-top: 2.5em;
+    // padding-bottom: 0;
     gap: 1.5em;
 
     i {

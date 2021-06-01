@@ -511,6 +511,7 @@ section {
 .footer2 {
   height: auto;
   background: #272727;
+  padding-bottom: 0;
 }
 
 .footer2 .contact-heading-container {
