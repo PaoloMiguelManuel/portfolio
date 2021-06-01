@@ -476,39 +476,6 @@ section {
 }
 
 .footer {
-  height: 10vh;
-  padding: 0;
-}
-
-.footer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #272727;
-}
-
-.footer div p {
-  font-size: 1.2rem;
-  color: #ffe400;
-}
-
-.footer div p a {
-  color: #ffffff;
-  padding: 0 10px;
-}
-
-.footer div p a:hover {
-  color: #ffe400;
-}
-
-.footer2 {
   height: auto;
   background: #272727;
   padding-bottom: 0;
@@ -516,7 +483,7 @@ section {
   padding-left: 0em;
 }
 
-.footer2 .contact-heading-container {
+.footer .contact-heading-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,7 +496,7 @@ section {
   padding-bottom: 3em;
 }
 
-.footer2 .contact-heading-container .contact-heading {
+.footer .contact-heading-container .contact-heading {
   font-family: "Permanent Marker", cursive;
   font-weight: 900;
   font-size: 2.5rem;
@@ -537,7 +504,7 @@ section {
   text-transform: uppercase;
 }
 
-.footer2 .contact-heading-container .contact-heading mark {
+.footer .contact-heading-container .contact-heading mark {
   color: #fff;
   background-color: #14a76c;
   display: inline-block;
@@ -545,12 +512,7 @@ section {
   padding-bottom: 0.35em;
 }
 
-.footer2 textarea {
-  font-family: "Poppins", sans-serif;
-  height: 150px;
-}
-
-.footer2 form {
+.footer form {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -564,26 +526,27 @@ section {
   padding: 0 2em;
 }
 
-.footer2 form label {
+.footer form label {
   font-size: 1.2rem;
   text-align: left;
   color: #fff;
 }
 
-.footer2 form input,
-.footer2 form textarea,
-.footer2 form button {
+.footer form input,
+.footer form textarea,
+.footer form button {
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   margin-bottom: 1em;
   padding: 1em;
   border-radius: 0.5em;
 }
 
-.footer2 form textarea {
-  font-family: "Poppins", sans-serif;
+.footer form textarea {
+  height: 150px;
 }
 
-.footer2 form .contact-form-btn {
+.footer form .contact-form-btn {
   margin: 2em auto 0;
   color: #ffffff;
   width: 50%;
@@ -593,13 +556,13 @@ section {
   border-radius: 0.5em;
 }
 
-.footer2 form .contact-form-btn:hover {
+.footer form .contact-form-btn:hover {
   color: #14a76c;
   background-color: #fff;
   border: 2px solid #14a76c;
 }
 
-.footer2 .contact-socials-container {
+.footer .contact-socials-container {
   background-color: #1d1b1b;
   font-size: 1.75rem;
   display: -webkit-box;
@@ -608,16 +571,16 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2.5em;
+  margin-top: 2em;
   padding: 1em;
   gap: 1.5em;
 }
 
-.footer2 .contact-socials-container i {
+.footer .contact-socials-container i {
   color: #fff;
 }
 
-.footer2 .contact-socials-container i:hover {
+.footer .contact-socials-container i:hover {
   color: #14a76c;
 }
 
@@ -674,12 +637,6 @@ section {
   .about .about-right {
     padding-top: 2em;
     width: 100%;
-  }
-  .footer div p {
-    font-size: 1.5rem;
-  }
-  .footer div p a {
-    padding-left: 1em;
   }
 }
 
@@ -783,7 +740,7 @@ section {
   .about-heading-container {
     padding-top: 4em;
   }
-  .footer2 .contact-heading-container {
+  .footer .contact-heading-container {
     padding-bottom: 4em;
   }
 }
@@ -810,7 +767,7 @@ section {
   .about-heading-container {
     padding-top: 5em;
   }
-  .footer2 .contact-heading-container {
+  .footer .contact-heading-container {
     padding-bottom: 5em;
   }
 }
