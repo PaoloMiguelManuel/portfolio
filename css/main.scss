@@ -597,29 +597,28 @@ section {
         border: 2px solid $tertiaryColour;
       }
     }
+  }
+  .contact-socials-container {
+    // position: absolute;
+    // bottom: 0;
+    // justify-self: end;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5em;
+    gap: 1.5em;
 
-    .contact-socials-container {
-      // position: absolute;
-      // bottom: 0;
-      // justify-self: end;
-      font-size: 1.75rem;
-      display: flex;
-      justify-content: center;
-      padding-top: 2.5em;
-      gap: 1.5em;
+    i {
+      color: #fff;
 
-      i {
-        color: #fff;
-
-        &:hover {
-          color: $tertiaryColour;
-        }
+      &:hover {
+        color: $tertiaryColour;
       }
-      // padding-top: 1em;
-      // padding-right: 1em;
-      // font-size: 1.75rem;
-      // color: #fff;
     }
+    // padding-top: 1em;
+    // padding-right: 1em;
+    // font-size: 1.75rem;
+    // color: #fff;
   }
 }
 
