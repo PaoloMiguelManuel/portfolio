@@ -710,7 +710,7 @@ section {
     padding: 4em 5em;
   }
   .hero {
-    height: auto;
+    height: 95vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
@@ -724,9 +724,9 @@ section {
   }
   .hero .hero-design {
     display: block;
-    margin-left: -40%;
-    margin-top: 30%;
-    width: 80%;
+    margin-left: -30%;
+    margin-top: 15%;
+    width: 60%;
   }
   .projects-heading-container {
     padding-top: 4em;
