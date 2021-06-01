@@ -544,6 +544,7 @@ section {
 
 .footer form textarea {
   height: 150px;
+  resize: none;
 }
 
 .footer form .contact-form-btn {
