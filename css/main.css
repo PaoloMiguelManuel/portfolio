@@ -150,8 +150,6 @@ header ul a {
 .contact-btn:hover {
   color: #fff;
   background-color: #f0e158;
-  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 section {
@@ -542,6 +540,15 @@ section {
   border: none;
 }
 
+.footer form input:focus,
+.footer form textarea:focus,
+.footer form button:focus {
+  outline: none;
+  border: 3px solid #14a76c;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
 .footer form textarea {
   height: 150px;
   resize: none;
@@ -559,8 +566,6 @@ section {
 .footer form .contact-form-btn:hover {
   color: #fff;
   background-color: #20d38b;
-  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .footer .contact-socials-container {

@@ -194,7 +194,7 @@ header {
       // background-color: #F7FF00;
       background-color: #f0e158;
       // border: 2px solid $primaryColour;
-      box-shadow: 0 0 10px rgba(255,255,255,.5); 
+      // box-shadow: 0 0 10px rgba(255,255,255,.5); 
 
     }
   
@@ -615,12 +615,20 @@ section {
       border-radius: 0.5em;
       border: none;
 
+      &:focus {
+        outline: none;
+        border: 3px solid $tertiaryColour;
+        box-shadow: 0 0 10px rgba(255,255,255,.5); 
+
+      }
     }
     
     textarea {
       height: 150px;
       resize: none;
       // font-family: "Poppins", sans-serif;
+
+
     }
 
     .contact-form-btn {
@@ -640,7 +648,7 @@ section {
         color: #fff;
         background-color: #20d38b;
         // border: 2px solid $tertiaryColour;
-        box-shadow: 0 0 10px rgba(255,255,255,.5); 
+        // box-shadow: 0 0 10px rgba(255,255,255,.5); 
 
       }
     }
