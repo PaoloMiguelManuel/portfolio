@@ -138,44 +138,60 @@ header {
 }
 
 .contact-btn {
-  display: inline-block;
-  padding: 0.75em 1.25em;
-  border-radius: 0.8em;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+  // display: inline-block;
+  // padding: 0.75em 1.25em;
+  // border-radius: 0.8em;
+  // color: #fff;
+  // position: relative;
+  // overflow: hidden;
+  // z-index: 1;
 
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $tertiaryColour;
-    z-index: -2;
-  }
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: $tertiaryColour;
+  //   z-index: -2;
+  // }
 
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 0%;
+  //   height: 100%;
+  //   background-color: $primaryColour;
+  //   transition: all 0.3s;
+  //   z-index: -1;
+  // }
+
+  // &:hover {
+  //   color: #000;
+
+  //   &:before {
+  //     width: 100%;
+  //   }
+  // }
+    color: #ffffff;
+    width: 200px;
+    display: block;
+    // max-width: 200px;
+    margin: 0 auto;
+    padding: 1em;
     background-color: $primaryColour;
-    transition: all 0.3s;
-    z-index: -1;
-  }
+    border: 2px solid $primaryColour;
+    border-radius: 0.5em;
 
-  &:hover {
-    color: #000;
-
-    &:before {
-      width: 100%;
+    &:hover {
+      color: $primaryColour;
+      background-color: #fff;
+      border: 2px solid $primaryColour;
     }
-  }
+  
 }
 
 section {
@@ -768,7 +784,7 @@ section {
   }
 
   .hero {
-    height: 95vh;
+    height: auto;
 
     display: grid;
     grid-template-columns: 66% auto;
@@ -783,8 +799,9 @@ section {
       // flex-direction: column;
       // justify-content: center;
       // align-items: start;
-      padding: 11em 8em 0 4em;
+      padding: 11em 8em 4em 4em;
       // padding: 0 4em;
+      // margin-bottom: 500px;
     }
 
     .hero-design {
@@ -877,6 +894,12 @@ section {
     //     padding-right: ;
     //   }
     // }
+  }
+
+  .hero {
+    .content {
+      padding-bottom: 5em;
+    }
   }
 
   section {

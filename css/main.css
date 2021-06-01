@@ -137,45 +137,20 @@ header ul a {
 }
 
 .contact-btn {
-  display: inline-block;
-  padding: 0.75em 1.25em;
-  border-radius: 0.8em;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.contact-btn:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #14a76c;
-  z-index: -2;
-}
-
-.contact-btn:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
+  color: #ffffff;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
   background-color: #ffe400;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  z-index: -1;
+  border: 2px solid #ffe400;
+  border-radius: 0.5em;
 }
 
 .contact-btn:hover {
-  color: #000;
-}
-
-.contact-btn:hover:before {
-  width: 100%;
+  color: #ffe400;
+  background-color: #fff;
+  border: 2px solid #ffe400;
 }
 
 section {
@@ -735,7 +710,7 @@ section {
     padding: 4em 5em;
   }
   .hero {
-    height: 95vh;
+    height: auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
@@ -745,7 +720,7 @@ section {
   }
   .hero .content {
     background: #272727;
-    padding: 11em 8em 0 4em;
+    padding: 11em 8em 4em 4em;
   }
   .hero .hero-design {
     display: block;
@@ -810,6 +785,9 @@ section {
 @media only screen and (min-width: 1200px) {
   .nav-container header {
     padding-left: 8em;
+  }
+  .hero .content {
+    padding-bottom: 5em;
   }
   section {
     padding: 5em 6em;
