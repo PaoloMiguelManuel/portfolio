@@ -308,7 +308,7 @@ section {
 
   .skills-heading {
     font-family: "Permanent Marker", cursive;
-    color: $primaryColour;
+    // color: $primaryColour;
     font-size: 2.5rem;
     font-weight: 900;
     letter-spacing: 0.17em;
@@ -348,26 +348,25 @@ section {
       height: 4em;
       font-size: 3rem;
 
-
       // &.one {
-        // background-color: red;
-        // background-color: red;
-        // background-color: red;
-        // text-align: center;
-        // height: 500px;
-        // margin-top: 200px;
-        // margin-bottom: 200px;
-        // background-color: red;
-        
-        img {
-          // width: 250px;
-          // height: 100%;
-          // display: block;
-          // margin: 0 auto;
-          width: 100%;
-          height: auto;
-          max-height: 4em;
-        }
+      // background-color: red;
+      // background-color: red;
+      // background-color: red;
+      // text-align: center;
+      // height: 500px;
+      // margin-top: 200px;
+      // margin-bottom: 200px;
+      // background-color: red;
+
+      img {
+        // width: 250px;
+        // height: 100%;
+        // display: block;
+        // margin: 0 auto;
+        width: 100%;
+        height: auto;
+        max-height: 4em;
+      }
       // }
     }
 
@@ -494,6 +493,7 @@ section {
 .footer {
   height: 10vh;
   padding: 0;
+  // background: yelow;
 
   div {
     display: flex;
@@ -518,6 +518,105 @@ section {
   }
 }
 
+.footer2 {
+  height: auto;
+  background: $backgroundColour;
+
+  .contact-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+
+    .contact-heading {
+      font-family: "Permanent Marker", cursive;
+      font-weight: 900;
+      font-size: 2.5rem;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+      // margin: 0;
+      // color: #fff;
+
+      mark {
+        color: #fff;
+        background-color: $tertiaryColour;
+        display: inline-block;
+        line-height: 0em;
+        padding-bottom: 0.35em;
+      }
+    }
+  }
+
+  textarea {
+    font-family: "Poppins", sans-serif;
+    height: 150px;
+  }
+
+  form {
+    // border-radius: 1em;
+    // font-size: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea,
+    button {
+      font-size: 1rem;
+      margin-bottom: 1em;
+      padding: 1em;
+      border-radius: 0.5em;
+    }
+
+    textarea {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .contact-form-btn {
+      margin: 0 auto;
+      color: #ffffff;
+      width: 50%;
+      // height: 150%;
+      height: 3.5em;
+      // max-width: 200px;
+      background-color: $tertiaryColour;
+      border: 2px solid $tertiaryColour;
+      border-radius: 0.5em;
+
+      &:hover {
+        color: $tertiaryColour;
+        background-color: #fff;
+        border: 2px solid $tertiaryColour;
+      }
+    }
+
+    .contact-socials-container {
+      // position: absolute;
+      // bottom: 0;
+      // justify-self: end;
+      font-size: 1.75rem;
+      display: flex;
+      justify-content: center;
+      padding-top: 2.5em;
+      gap: 1.5em;
+
+      i {
+        color: #fff;
+
+        &:hover {
+          color: $tertiaryColour;
+        }
+      }
+      // padding-top: 1em;
+      // padding-right: 1em;
+      // font-size: 1.75rem;
+      // color: #fff;
+    }
+  }
+}
+
 // ------------------------------------------------------------------------------------------------------
 // media queries ----------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------
@@ -533,7 +632,6 @@ section {
 }
 
 @media only screen and (min-width: 768px) {
- 
   header {
     padding-left: 5em;
   }
@@ -714,7 +812,6 @@ section {
     padding-bottom: 4em;
   }
 
-
   .skills-container ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -748,12 +845,14 @@ section {
     }
   }
 
-
-
-
-
   .about-heading-container {
     padding-top: 4em;
+  }
+
+  .footer2 {
+    .contact-heading-container {
+      padding-bottom: 4em;
+    }
   }
 }
 
@@ -794,6 +893,12 @@ section {
   .about-heading-container {
     padding-top: 5em;
   }
+
+  .footer2 {
+    .contact-heading-container {
+      padding-bottom: 5em;
+    }
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -818,9 +923,6 @@ section {
     padding: 9em 10em;
   }
 
-
-
-
   .projects {
     .project-container {
       grid-template-columns: 40% 40%;
@@ -830,10 +932,6 @@ section {
       }
     }
   }
-
-
-
-
 
   .about {
     // display: flex;

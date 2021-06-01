@@ -67,7 +67,7 @@
          <h2 class="delay-animation">Web <span>Developer</span></h2>
 
          <div class="meet delay-animation">
-            <a class="contact-btn" href="mailto:paolomiguelmanuel@outlook.com">Contact Me</a>
+            <a class="contact-btn" href="#contact-heading">Contact Me</a>
          </div>
       </div>
 
@@ -313,10 +313,8 @@
 
 
 
-   <section class="footer">
-      <div class="footer-contact">
-
-
+   <section class="footer2">
+      <!-- <div class="footer-contact">
          <p>
             Contact Me
             <a href="mailto:paolomiguelmanuel@outlook.com"><i class="fas fa-envelope"></i></a>
@@ -324,19 +322,63 @@
             <a href="https://www.linkedin.com/in/paolo-miguel-manuel-3376a71a9/"><i class="fab fa-linkedin-in"></i></a>
             <a href="tester-resume.docx" download><i class="far fa-file-pdf"></i></a>
          </p>
+      </div> -->
 
+      <div id="contact-heading" class="contact-heading-container scroll-transition">
+         <h2 class="contact-heading"><mark>Contact</mark></h2>
       </div>
 
+      <form action="https://formsubmit.co/p.manuel93@hotmail.com" method="POST">
 
-      <!-- <div class="footer-contact">
-          <p>Want To Chat?</p> 
-         <ul>
-            <li>Want To Chat?</li>
-            <li><a href=""><i class="fab fa-github-alt"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-google-drive"></i></a></li>
-         </ul>
-      </div> -->
+
+         <!-- <div class="contact-name-container"> -->
+         <!-- <label for="contact-name"><i class="fas fa-user"></i></label> -->
+         <input id="contact-name" type="text" name="name" placeholder="Name" required>
+         <!-- </div> -->
+
+         <!-- <div class="contact-email-container"> -->
+         <!-- <label for="contact-email"><i class="fas fa-envelope"></i></label> -->
+         <input id="contact-email" type="email" name="email" placeholder="Email" required>
+         <!-- </div> -->
+
+         <!-- <div class="contact-message-container"> -->
+         <!-- <label for="contact-message"><i class="fas fa-pen"></i></label> -->
+         <textarea id="contact-message" name="message" placeholder="Message"></textarea>
+         <!-- </div> -->
+
+
+
+
+         <!-- <div> -->
+         <!-- <div class="empty"></div> -->
+         <button class="contact-form-btn" type="submit">Submit</button>
+         <!-- </div> -->
+
+         <input type="hidden" name="_subject" value="New email from portfolio site!">
+         <input type="hidden" name="_autoresponse"
+            value="thank you for your submission! i will get back to you shortly!">
+
+         <div class="contact-socials-container">
+
+
+
+
+
+            <a href="https://github.com/PaoloMiguelManuel"><i class="fab fa-github-alt"></i></a>
+            <a href="https://www.linkedin.com/in/paolo-miguel-manuel-3376a71a9/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="tester-resume.docx" download><i class="fas fa-file-pdf"></i></a>
+
+
+
+
+
+
+
+
+
+
+         </div>
+      </form>
    </section>
 
    <!-- gsap animation -->

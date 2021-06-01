@@ -326,7 +326,6 @@ section {
 
 .skills-heading-container .skills-heading {
   font-family: "Permanent Marker", cursive;
-  color: #ffe400;
   font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 0.17em;
@@ -534,6 +533,107 @@ section {
   color: #ffe400;
 }
 
+.footer2 {
+  height: auto;
+  background: #272727;
+}
+
+.footer2 .contact-heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3em;
+}
+
+.footer2 .contact-heading-container .contact-heading {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.footer2 .contact-heading-container .contact-heading mark {
+  color: #fff;
+  background-color: #14a76c;
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.35em;
+}
+
+.footer2 textarea {
+  font-family: "Poppins", sans-serif;
+  height: 150px;
+}
+
+.footer2 form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer2 form input,
+.footer2 form textarea,
+.footer2 form button {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.footer2 form textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer2 form .contact-form-btn {
+  margin: 0 auto;
+  color: #ffffff;
+  width: 50%;
+  height: 3.5em;
+  background-color: #14a76c;
+  border: 2px solid #14a76c;
+  border-radius: 0.5em;
+}
+
+.footer2 form .contact-form-btn:hover {
+  color: #14a76c;
+  background-color: #fff;
+  border: 2px solid #14a76c;
+}
+
+.footer2 form .contact-socials-container {
+  font-size: 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2.5em;
+  gap: 1.5em;
+}
+
+.footer2 form .contact-socials-container i {
+  color: #fff;
+}
+
+.footer2 form .contact-socials-container i:hover {
+  color: #14a76c;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   .nav-container a {
     font-size: 0.8rem;
@@ -696,6 +796,9 @@ section {
   .about-heading-container {
     padding-top: 4em;
   }
+  .footer2 .contact-heading-container {
+    padding-bottom: 4em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -716,6 +819,9 @@ section {
   }
   .about-heading-container {
     padding-top: 5em;
+  }
+  .footer2 .contact-heading-container {
+    padding-bottom: 5em;
   }
 }
 
