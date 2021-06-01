@@ -585,6 +585,12 @@ section {
           flex-direction: column;
 }
 
+.footer2 form label {
+  font-size: 1.2rem;
+  text-align: left;
+  color: #fff;
+}
+
 .footer2 form input,
 .footer2 form textarea,
 .footer2 form button {
