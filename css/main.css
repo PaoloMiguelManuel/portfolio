@@ -512,8 +512,8 @@ section {
   height: auto;
   background: #272727;
   padding-bottom: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .footer2 .contact-heading-container {
