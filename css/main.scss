@@ -13,7 +13,7 @@ $liveBtnColour: #376e6f;
 
 body {
   height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .background {
@@ -57,7 +57,7 @@ a {
 
   .initials {
     font-size: 1.5rem;
-    font-family: "Vampiro One", cursive;
+    font-family: 'Vampiro One', cursive;
     margin-right: 0.5em;
     color: $primaryColour;
   }
@@ -91,6 +91,8 @@ header {
   display: none;
 }
 
+// TODO: move to html
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 .hero {
   display: grid;
   background: $backgroundColour;
@@ -100,7 +102,12 @@ header {
   h1 {
     color: #ffffff;
     text-transform: uppercase;
-    font-family: "Permanent Marker", cursive;
+    // font-family: "Permanent Marker", cursive;
+    font-family: 'Carter One', cursive;
+    // font-weight: bold;
+    // border-top: 5px solid #fff;
+    // border-bottom: 5px solid $primaryColour;
+    // display: span;
 
     span {
       color: $primaryColour;
@@ -109,7 +116,7 @@ header {
 
   h2 {
     color: #ffffff;
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Carter One', cursive;
     padding: 1em 0;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -178,26 +185,24 @@ header {
   // }
   font-size: 1.1rem;
   // font-weight: bold;
-    color: #000;
-    width: 200px;
-    display: block;
-    // max-width: 200px;
-    margin: 0 auto;
-    padding: 1em;
-    background-color: $primaryColour;
+  color: #000;
+  width: 200px;
+  display: block;
+  // max-width: 200px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: $primaryColour;
+  // border: 2px solid $primaryColour;
+  border-radius: 0.5em;
+
+  &:hover {
+    // color: $primaryColour;
+    color: #fff;
+    // background-color: #F7FF00;
+    background-color: #f0e158;
     // border: 2px solid $primaryColour;
-    border-radius: 0.5em;
-
-    &:hover {
-      // color: $primaryColour;
-      color: #fff;
-      // background-color: #F7FF00;
-      background-color: #f0e158;
-      // border: 2px solid $primaryColour;
-      // box-shadow: 0 0 10px rgba(255,255,255,.5); 
-
-    }
-  
+    // box-shadow: 0 0 10px rgba(255,255,255,.5);
+  }
 }
 
 section {
@@ -205,13 +210,17 @@ section {
   text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 .projects-heading-container {
   display: flex;
   justify-content: center;
   padding-top: 3em;
 
   .projects-heading {
-    font-family: "Permanent Marker", cursive;
+    // font-family: 'Permanent Marker', cursive;
+    font-family: 'Carter One', cursive;
     font-weight: 900;
     font-size: 2.5rem;
     letter-spacing: 0.17em;
@@ -291,8 +300,8 @@ section {
         padding: 0;
 
         &:hover {
-          background-color: #4b6579;;
-          box-shadow: 0 0 10px rgba(33,33,33,.5); 
+          background-color: #4b6579;
+          // box-shadow: 0 0 10px rgba(33,33,33,.5);
         }
       }
       .live-btn {
@@ -304,8 +313,8 @@ section {
         border-radius: 0.5em;
 
         &:hover {
-          background-color: #4b8283;;
-          box-shadow: 0 0 10px rgba(33,33,33,.5); 
+          background-color: #4b8283;
+          // box-shadow: 0 0 10px rgba(33,33,33,.5);
         }
       }
     }
@@ -330,7 +339,7 @@ section {
   padding-bottom: 3em;
 
   .skills-heading {
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Carter One', cursive;
     // color: $primaryColour;
     font-size: 2.5rem;
     font-weight: 900;
@@ -434,7 +443,7 @@ section {
   padding-top: 3em;
 
   .about-heading {
-    font-family: "Permanent Marker", cursive;
+    font-family: 'Carter One', cursive;
     font-size: 2.5rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -474,7 +483,7 @@ section {
 
     .about-image-container::after {
       border-radius: 1em;
-      content: "";
+      content: '';
       position: absolute;
       top: 0.9em;
       left: 1.5em;
@@ -542,10 +551,6 @@ section {
 // }
 
 .footer {
-
-
-
-
   height: auto;
   background: $backgroundColour;
   padding-bottom: 0;
@@ -559,7 +564,7 @@ section {
     padding-bottom: 3em;
 
     .contact-heading {
-      font-family: "Permanent Marker", cursive;
+      font-family: 'Carter One', cursive;
       font-weight: 900;
       font-size: 2.5rem;
       letter-spacing: 0.17em;
@@ -581,13 +586,11 @@ section {
     // font-family: "Poppins", sans-serif;
     // font-family: "Permanent Marker", cursive;
     //testin git iggnore this line
-
   }
   textarea {
     // font-family: "Poppins", sans-serif;
-    
-    // font-family: "Permanent Marker", cursive;
 
+    // font-family: "Permanent Marker", cursive;
   }
   form {
     // border-radius: 1em;
@@ -598,18 +601,18 @@ section {
     display: flex;
     flex-direction: column;
     padding: 0 2em;
-    
+
     label {
       font-size: 1.2rem;
       text-align: left;
       color: #fff;
     }
-    
+
     input,
     textarea,
     button {
-      font-family: "Poppins", sans-serif;
-      // 
+      font-family: 'Poppins', sans-serif;
+      //
       font-size: 1rem;
       margin-bottom: 1em;
       padding: 1em;
@@ -619,17 +622,14 @@ section {
       &:focus {
         outline: none;
         border: 3px solid $tertiaryColour;
-        box-shadow: 0 0 10px rgba(255,255,255,.5); 
-
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
       }
     }
-    
+
     textarea {
-      height: 150px;
+      // height: 175px;
       resize: none;
       // font-family: "Poppins", sans-serif;
-
-
     }
 
     .contact-form-btn {
@@ -649,8 +649,7 @@ section {
         color: #fff;
         background-color: #20d38b;
         // border: 2px solid $tertiaryColour;
-        // box-shadow: 0 0 10px rgba(255,255,255,.5); 
-
+        // box-shadow: 0 0 10px rgba(255,255,255,.5);
       }
     }
   }
@@ -659,19 +658,24 @@ section {
     // position: absolute;
     // bottom: 0;
     // justify-self: end;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     margin-top: 2em;
     padding: 1em;
     // padding-bottom: 0;
     gap: 1.5em;
-
+    span {
+      a {
+        font-family: 'Vampiro One', cursive;
+        color: $primaryColour;
+      }
+    }
     i {
       color: #fff;
 
       &:hover {
-        color: $tertiaryColour;
+        color: $primaryColour;
       }
     }
     // padding-top: 1em;
