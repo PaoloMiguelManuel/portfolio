@@ -674,7 +674,7 @@ section {
     padding: 4em 5em;
   }
   .hero {
-    height: 95vh;
+    min-height: 95vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;

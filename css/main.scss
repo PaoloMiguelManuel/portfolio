@@ -617,7 +617,7 @@ section {
   }
 
   .hero {
-    height: 95vh;
+    min-height: 95vh;
     display: grid;
     grid-template-columns: 66% auto;
     // remove background set from previous css to achieve split look
