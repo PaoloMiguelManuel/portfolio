@@ -632,11 +632,12 @@ section {
     // TODO: fix sizing and padding
     .hero-design {
       display: block;
-      margin-left: -100%;
+      margin-left: -50%;
       // margin-top: 20vh;
       // width: 200%;
-      width: 200%;
-      z-index: -1;
+      // height: 90vh;
+      width: 100%;
+      // z-index: -1;
     }
   }
 
