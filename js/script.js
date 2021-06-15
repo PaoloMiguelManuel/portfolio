@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-var tl = gsap.timeline();
+let tl = gsap.timeline();
 
 tl.from('.content', {
   y: '-30%',
@@ -22,25 +22,26 @@ tl.from(
   {
     opacity: 0,
     y: 50,
-    duration: 1,
+    duration: 2,
+    rotation: 180,
   },
   '-=2'
 );
 
-gsap.from('.circle-animation', {
-  opacity: 0,
-  stagger: 0.2,
-  scale: 0.1,
-  duration: 3,
-});
+// gsap.from('.circle-animation', {
+//   opacity: 0,
+//   stagger: 0.2,
+//   scale: 0.1,
+//   duration: 3,
+// });
 
-gsap.from('.x-animation', {
-  opacity: 0,
-  stagger: 0.2,
-  scale: 0.1,
-  y: 100,
-  duration: 2.5,
-});
+// gsap.from('.x-animation', {
+//   opacity: 0,
+//   stagger: 0.2,
+//   scale: 0.1,
+//   y: 100,
+//   duration: 2.5,
+// });
 
 gsap.from('.scroll-transition', {
   scrollTrigger: {
