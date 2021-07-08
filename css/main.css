@@ -278,6 +278,9 @@ section {
 
 .site-screenshot {
   width: 100%;
+  outline: none;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .skills-heading-container {
